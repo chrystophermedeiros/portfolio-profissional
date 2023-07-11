@@ -28,6 +28,11 @@ const GlobalStyle = createGlobalStyle`
     --color-ligth: rgb(255, 255, 255, 0.6);
 }
 
+body {
+    background: var(--color-bg);
+    color: var(--color-white);
+}
+
 
  
 `

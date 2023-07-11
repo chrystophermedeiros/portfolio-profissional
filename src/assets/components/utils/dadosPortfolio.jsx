@@ -28,7 +28,7 @@ export const projects = [
     {
         id: uuidv1(),
         img:imgAndroid, 
-        name: "Projeto-Cordel",
+        name: "Projeto-3",
         about: "Um belo cordel moderno de autoria de Milton Duarte! O texto retrata de forma poética a frustração e saudade que alguns sentem em relação à comunicação atual dominada pela tecnologia. .",
         path: "https://chrystophermedeiros.github.io/projeto-cordel/",
         github: "https://github.com/chrystophermedeiros/projeto-cordel"
@@ -40,7 +40,7 @@ export const projects = [
     {
         id: uuidv1(),
         img:imgAndroid, 
-        name: "Projeto-Cordel",
+        name: "Projeto-4",
         about: "Um belo cordel moderno de autoria de Milton Duarte! O texto retrata de forma poética a frustração e saudade que alguns sentem em relação à comunicação atual dominada pela tecnologia. .",
         path: "https://chrystophermedeiros.github.io/projeto-cordel/",
         github: "https://github.com/chrystophermedeiros/projeto-cordel"
@@ -52,7 +52,7 @@ export const projects = [
     {
         id: uuidv1(),
         img:imgAndroid, 
-        name: "Projeto-Cordel",
+        name: "Projeto-5",
         about: "Um belo cordel moderno de autoria de Milton Duarte! O texto retrata de forma poética a frustração e saudade que alguns sentem em relação à comunicação atual dominada pela tecnologia. .",
         path: "https://chrystophermedeiros.github.io/projeto-cordel/",
         github: "https://github.com/chrystophermedeiros/projeto-cordel"

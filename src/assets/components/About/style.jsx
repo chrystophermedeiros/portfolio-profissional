@@ -30,6 +30,6 @@ export const AboutImg = styled.img `
     transition: opacity 2s cubic-bezier(0.5, 0, 0, 1) 0.2s, transform 2s cubic-bezier(0.5, 0, 0, 1) 0.2s;
     overflow-clip-margin: content-box;
     overflow: clip;
-    border-radius: 30%;
+    border-radius: 10%;
    
 `

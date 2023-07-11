@@ -13,6 +13,7 @@
     "i": "^0.3.7",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-elastic-carousel": "^0.11.5",
     "styled-components": "^6.0.3",
     "uuid": "^9.0.0"
   },
