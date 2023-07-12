@@ -26,6 +26,7 @@ const GlobalStyle = createGlobalStyle`
     --color-primary-variant: rgba(77, 181, 255, 0.4);
     --color-white: #fff;
     --color-ligth: rgb(255, 255, 255, 0.6);
+    --transition: all 400ms ease;
 }
 
 body {

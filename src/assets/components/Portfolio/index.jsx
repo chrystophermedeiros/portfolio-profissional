@@ -1,10 +1,11 @@
-import { Container,ContainerItems, Card } from "./style";
+import { Container,ContainerItems, Card, ButtonContainer } from "./style";
 import I from '../../img/sobre.svg'
-import { projects } from "../utils/dadosPortfolio";
 import Carousel from 'react-elastic-carousel'
-
+import {projects} from '../../utils/dadosPortfolio'
+import { Button } from "../Button";
 export function Portfolio() {
 const myProjec = projects
+
 
 const breakPoints = [
     { width: 1, itemsToShow: 1 },
@@ -16,6 +17,7 @@ const breakPoints = [
     return (
     <Container>
         <h1>Portfólio</h1>
+        {/* <h3>projetos realizado</h3> */}
         <ContainerItems >
             <Carousel itemsToShow={4}
             style={{ width: '90%' }}
@@ -25,8 +27,13 @@ const breakPoints = [
                     <Card key={obj.id}>
                         <img src={obj.img} alt="" />
                         <p>{obj.name}</p>
-                        <a target="_blank" href={obj.path}>ver</a>
-                        <a target="_blank" href={obj.path}>GitHub</a>
+                        <ButtonContainer>
+                            <Button  btn1><a target="_blank" href={obj.path}>ver</a></Button>
+                            <Button><a target="_blank" href={obj.github}>GitHub</a></Button>
+                        
+                        </ButtonContainer>
+                        <Button>Sobre</Button>
+                        
                     </Card>)}
             </Carousel>
         </ContainerItems>
