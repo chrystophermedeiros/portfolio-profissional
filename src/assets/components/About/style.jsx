@@ -1,8 +1,9 @@
 import  styled  from "styled-components";
 
 export const Container = styled.div`
-    
-    width: 100%;
+  
+    width: 80%;
+    margin: 0 10%;
     h1{
         text-align: center;
         padding: 30px;

@@ -3,7 +3,7 @@ import I from '../../img/sobre.svg'
 
 export function About() {
     return (
-        <Container>
+        <Container id={"sobre"}>
             <h1>Sobre Mim</h1>
             <ContainerItems>
             <AboutImg src={I} alt="" />

@@ -1,13 +1,14 @@
 import  styled  from "styled-components";
 
-export const Container = styled.div`
-  
-    width: 100%;
+export const Container = styled.section`
+
+    width: 90%;
+    margin: 0 5%;
     h1 {
         text-align: center;
         padding: 30px;
     }
-    
+   
 
 `
 
@@ -20,14 +21,14 @@ export const ContainerItems = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-   
+    
     
 `
 
 export const Card = styled.div`
     
-    height: 350px;
-    width: 700px;
+    height: 500px;
+    width: 500px;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
@@ -39,17 +40,6 @@ export const Card = styled.div`
     margin: 5px;
     overflow: hidden;
     
-    
-
-
-    img{
-        height: 60%;
-        width: 100%;
-       
-        border-radius: 10px;
-    }
-    
-
     
 `
 
@@ -75,5 +65,29 @@ export const ButtonContainer = styled.div`
         color: #920aed;
     }
 
+`
+
+export const ImgCard = styled.div`
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+
+    background-image: url(${(props) => props.isImg});
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+`
+
+export const Input = styled.input`
+    width: 80%;
+    margin: 2% 10%;
+    background: transparent;
+    font-size: 20px;
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 10px;
+    color: aqua;
+    
 `
 

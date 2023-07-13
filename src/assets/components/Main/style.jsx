@@ -33,3 +33,14 @@ export const MyImg = styled.img `
     background: var(--color-primary);
     
 `
+
+export const ContainerButton = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    width: 25%;
+    margin:0 40%;
+    padding: 20px;
+    
+`
