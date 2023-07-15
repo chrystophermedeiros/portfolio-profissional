@@ -1,44 +1,162 @@
-import  styled  from "styled-components";
+import styled from 'styled-components'
 
 export const Container = styled.header`
-
-   width: 100%;
-   
-   z-index: 2;
   position: fixed;
+  width: 100%;
   top: 0;
-  padding: 2px 50px;
-  background-color: ${(props) =>
-    props.changeBackground ? '#000000' : 'transparent'};
-  transition: background-color 0.7s ease-in-out;
+  height: 3.5rem;
+  font-weight: 600;
+  font-size: 1.2rem;
+  position: relative;
+  z-index: 10;
+  background: black;
 
-  min-height: 20px;
-
-  :hover{
+  a {
+    color: aqua;
     
   }
 
+  @media (min-width: 995px) {
+    display: flex;
+    height: 4rem;
+    justify-content: space-around;
+    padding: 1rem 0;
+    align-items: center;
+    box-shadow: black 0px 10px 30px 1px;
+  }
 
-`
+  @media (min-width: 2000px) {
+    display: flex;
+    justify-content: space-evenly;
+  }
 
-
-
-export const ContainerItems = styled.div`
+  .mobile-content {
+    font-weight: 700;
+    font-size: 1.2rem;
+    
    
-    
+    a {
+      display: flex;
+      align-items: center;
 
-    ul{
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        padding: 30px;
-        list-style:none;
-        
+
+      .logo {
+        margin-right: .5rem;
+      }
+
+      .logo-name {
+        font-size: 1.2rem;
+        transition: all;
+        transition-duration: 500ms;
+        margin: 20% 1%;
+
+        &:hover {
+          color: white;
+          transition-duration: 100ms;
+          margin-top: -.5rem;
+        }
+      }
     }
-    li{
-      
-        
+
+    @media (max-width: 994px) {
+      margin: 0rem 1rem;
     }
-    
+  }
 `
 
+export const MobileIcon = styled.div`
+  display: none;
+  @media (max-width: 994px) {
+    display: block;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+    z-index: 20;
+  }
+`
+
+
+
+export const NavMenu = styled.div`
+  @media (max-width: 994px) {
+    height: 100vh;
+    width: 100vw;
+    background: #1a1a1a;
+    z-index: 10;
+    opacity: 0.95;
+    position: fixed;
+    transform: ${({ open }) => (open ? 'translateX(0)' : 'translateX(100%)')};
+    transition: transform 0.5s ease-in-out;
+  }
+
+  ul {
+    display: flex;
+    gap: 1.2rem;
+    justify-content: center;
+    align-items: center;
+
+    a {
+      gap: 2px;
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: white;
+      height: 1rem;
+      cursor: pointer;
+
+      span {
+        line-height: 1.08;
+        white-space: nowrap;
+        position: relative;
+
+        &:before {
+          content: '';
+          height: 2px;
+          width: auto;
+          background-color: black;
+          border-radius: 0px 0px 4px 4px;
+          position: absolute;
+          bottom: -6px;
+          left: 0px;
+          right: 0px;
+          opacity: 0;
+          transform-origin: left center;
+          transform: scaleX(0);
+          transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
+          visibility: hidden;
+        }
+      }
+
+      &:hover {
+        color: red;
+        span:before {
+          transform: scaleX(1);
+          visibility: visible;
+          opacity: 1;
+        }
+      }
+    }
+
+    @media (max-width: 994px) {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding-top: 1.5rem;
+      gap: 1.8rem;
+    }
+  }
+`
+
+export const Icons = styled.div`
+  @media (min-width: 995px) {
+    display: none;
+  }
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.1rem;
+  margin-top: 1.7rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+`

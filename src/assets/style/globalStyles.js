@@ -15,6 +15,7 @@ const GlobalStyle = createGlobalStyle`
     outline: none;
     appearance: none;
     text-decoration:none;
+    list-style: none;
 
 
 }
