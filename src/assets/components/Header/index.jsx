@@ -86,13 +86,13 @@ export function Header() {
         </ul>
 
         <Icons>
-          <a href="https://github.com/EvanderInacio" target="_blank" rel="noopener noreferrer" aria-label="Link para o Github">
+          <a href="https://github.com/chrystophermedeiros" target="_blank" rel="noopener noreferrer" aria-label="Link para o Github">
             <FiGithub />
           </a>
-          <a href="https://www.linkedin.com/in/evander-inacio/" target="_blank" rel="noopener noreferrer" aria-label="Link para o Linkedin">
+          <a href="https://www.linkedin.com/in/chrystopher-medeiros" target="_blank" rel="noopener noreferrer" aria-label="Link para o Linkedin">
             <FiLinkedin />
           </a>
-          <a href="https://api.whatsapp.com/send?phone=5511995085916" target="_blank" rel="noopener noreferrer" aria-label="Link para entrar em contato via whatsapp">
+          <a href="https://api.whatsapp.com/send?phone=5588998061512" target="_blank" rel="noopener noreferrer" aria-label="Link para entrar em contato via whatsapp">
             <FaWhatsapp />
           </a>
         </Icons>

@@ -6,11 +6,12 @@ const buttonStyled = css`
   color: #ffffff;
   border-radius: 30px;
   transition: var(--transition);
+
  
   cursor: pointer;
   font-size: 14px;
   font-weight: 500;
-  width: 50%;
+ 
 
   @media screen and (max-width: 800px) {
     font-size: 16px;

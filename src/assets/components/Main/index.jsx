@@ -1,6 +1,6 @@
-import { Container,ContainerItems, MyImg, Card, ContainerButton } from "./style";
+import { Container, ContainerItems, MyImg, Card, ContainerButton } from "./style"
 import I from '../../img/eu.svg'
-import { Button } from "../Button";
+import { Button } from "../Button"
 
 
 export function Main() {
@@ -20,5 +20,5 @@ export function Main() {
             </ContainerButton>
 
         </Container>
-    ) 
+    )
 }

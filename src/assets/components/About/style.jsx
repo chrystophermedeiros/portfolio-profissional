@@ -1,4 +1,4 @@
-import  styled  from "styled-components";
+import styled from "styled-components";
 
 export const Container = styled.div`
   
@@ -25,7 +25,7 @@ export const Card = styled.div`
     
 `
 
-export const AboutImg = styled.img `
+export const AboutImg = styled.img`
     width: 40%;
     transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
     transition: opacity 2s cubic-bezier(0.5, 0, 0, 1) 0.2s, transform 2s cubic-bezier(0.5, 0, 0, 1) 0.2s;
