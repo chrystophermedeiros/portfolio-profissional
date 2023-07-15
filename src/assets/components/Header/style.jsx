@@ -7,9 +7,9 @@ export const Container = styled.header`
   height: 3.5rem;
   font-weight: 600;
   font-size: 1.2rem;
-  position: relative;
+ 
   z-index: 10;
-  background: black;
+  background:var(--color-bg);
 
   a {
     color: aqua;
@@ -17,6 +17,7 @@ export const Container = styled.header`
   }
 
   @media (min-width: 995px) {
+   
     display: flex;
     height: 4rem;
     justify-content: space-around;
@@ -60,6 +61,7 @@ export const Container = styled.header`
 
     @media (max-width: 994px) {
       margin: 0rem 1rem;
+     
     }
   }
 `
@@ -113,7 +115,7 @@ export const NavMenu = styled.div`
           content: '';
           height: 2px;
           width: auto;
-          background-color: black;
+          background-color: #091ce7;
           border-radius: 0px 0px 4px 4px;
           position: absolute;
           bottom: -6px;
@@ -128,7 +130,7 @@ export const NavMenu = styled.div`
       }
 
       &:hover {
-        color: red;
+        color: #00eaff;
         span:before {
           transform: scaleX(1);
           visibility: visible;

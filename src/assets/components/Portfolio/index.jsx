@@ -42,7 +42,8 @@ export function Portfolio() {
               <Card className="card" key={obj.id}>
                 <ImgCard isImg={obj.img}></ImgCard>
                 <p>{obj.name}</p>
-                <ButtonContainer>
+                <ButtonContainer className="contentButton">
+                  
                   <a target="_blank" href={obj.path}><Button className="button" btn1 >Visitar </Button></a>
                   <a target="_blank" href={obj.github}><Button className="button"  >Github <FiGithub /></Button></a>
                 </ButtonContainer>

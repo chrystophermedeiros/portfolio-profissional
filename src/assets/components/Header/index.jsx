@@ -49,9 +49,9 @@ export function Header() {
       <NavMenu onClick={handleOpen} open={open}>
         <ul>
           <li>
-            <Link to="/">
+            <a href="/">
               <span>Home</span>
-            </Link>
+            </a>
           </li>
 
           <li>

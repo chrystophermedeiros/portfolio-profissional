@@ -18,6 +18,18 @@ export const ContainerItems = styled.div`
     justify-content: center;
     padding: 30px;
     gap: 20px;
+
+    @media (max-width: 994px) {
+
+    flex-direction: column;
+    gap: 1.5rem;
+    transition: transform 0.5s ease-in-out;
+
+    img{
+    width: 80%;
+   
+}
+}
     
 `
 

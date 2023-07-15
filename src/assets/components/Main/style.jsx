@@ -5,6 +5,8 @@ export const Container = styled.div`
     height: 100%;
     width: 100%;
     /* background: ${(props) => props.isDark ? '#14fae753' : ''}; */
+
+  
 `
 
 export const ContainerItems = styled.div`
@@ -15,6 +17,18 @@ export const ContainerItems = styled.div`
     padding: 30px;
     gap: 5px;
     margin: 10% 10%;
+
+    @media (max-width: 994px) {
+
+        flex-direction: column-reverse;
+        gap: 1.5rem;
+    transition: transform 0.5s ease-in-out;
+
+    img{
+
+        width: 80%;
+    }
+  }
 `
 
 export const Card = styled.div`

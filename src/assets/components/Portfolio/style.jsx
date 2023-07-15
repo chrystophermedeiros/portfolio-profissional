@@ -58,20 +58,14 @@ export const Card = styled.div`
 
 
     &:hover {
-    background-color: transparent;
-    border: 1px solid white;
-    transition: all 350ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
+        background-color: transparent;
+       
     
-    &::before{
-        content: "ffff";
-          height: 97%;
-          width: 16%;
-          background-color: #0d83b6a1;
-          border-radius: 20px;
-          position: absolute;
-          z-index: 10;
-    }
-
+        border: 3px solid aqua;
+        transition: all 400ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
+        
+    
+ 
   }
   
 `
@@ -91,8 +85,8 @@ export const ButtonContainer = styled.div`
     display: flex;
     gap: 20px;
     margin-bottom: 10px;
+    
    
-
 
     a{
         text-decoration: none;
@@ -108,20 +102,6 @@ export const ButtonContainer = styled.div`
         }
    
     }
-
-    a:visited {
-    color: #555;
-    }
-
-    a:hover {
-    color: #941a1a;
-    }
-
-    a:active {
-        color: #920aed;
-    }
-
- 
 
 `
 
