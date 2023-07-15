@@ -1,9 +1,35 @@
-import  styled  from "styled-components";
+import styled from "styled-components";
 
 export const Container = styled.section`
 
     width: 90%;
     margin: 0 5%;
+
+    
+    .rec.rec-arrow {
+    border-radius: 0;
+    background-color: #9758a6;
+    color: #ffffff;
+    border-radius: 50px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    @media (max-width: 994px) {
+        display: none;
+}
+
+   
+  }
+  .rec.rec-arrow:hover {
+    border: 2px solid #9758a6;
+    background-color: #efefef;
+    color: #9758a6;
+
+ 
+  }
+  .rec.rec-arrow:disabled {
+    border: none;
+    background-color: transparent;
+  }
+
     h1 {
         text-align: center;
         padding: 30px;
@@ -35,9 +61,7 @@ export const Container = styled.section`
 
 
 export const ContainerItems = styled.div`
-    /* display: grid;
-    grid-template-columns: repeat(3, 1fr); */
-    /* gap: 1.5rem; */
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -55,17 +79,21 @@ export const Card = styled.div`
     background-color: var(--color-bg-variant);
     padding: 10px;
     margin: 5px;
+    @media (max-width: 994px) {
+
+
+    img{
+
+    width: 80%;
+
+    }
+}
 
 
     &:hover {
         background-color: transparent;
-       
-    
         border: 3px solid aqua;
         transition: all 400ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
-        
-    
- 
   }
   
 `

@@ -27,6 +27,7 @@ export const ContainerItems = styled.div`
     img{
 
         width: 80%;
+
     }
   }
 `
