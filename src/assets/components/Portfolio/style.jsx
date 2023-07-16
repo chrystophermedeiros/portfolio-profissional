@@ -30,8 +30,7 @@ export const Container = styled.section`
   }
 
 
- 
- 
+
 
     h1 {
         text-align: center;
@@ -71,8 +70,8 @@ export const ContainerItems = styled.div`
 `
 
 export const Card = styled.div`
-    height: 500px;
-    width: 500px;
+    height: 400px;
+    width: 400px;
     border-radius: 20px;
     display: flex;
     flex-direction: column;

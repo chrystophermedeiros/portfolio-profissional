@@ -37,6 +37,10 @@ export function Portfolio() {
             itemsToShow={3}
             style={{ width: '100%' }}
             breakPoints={breakPoints}
+  
+            
+
+          
           >
             {filteredProjects.map((obj) => (
               <Card className="card" key={obj.id}>
