@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   
-    height: 100%;
+    height: 100vh;
     width: 100%;
     /* background: ${(props) => props.isDark ? '#14fae753' : ''}; */
 `
