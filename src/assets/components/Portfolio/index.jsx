@@ -42,8 +42,8 @@ export function Portfolio() {
 
           
           >
-            {filteredProjects.map((obj) => (
-              <Card className="card" key={obj.id}>
+            {filteredProjects && filteredProjects.map((obj) => (
+              <Card  key={obj.id}>
                 <ImgCard isImg={obj.img}></ImgCard>
                 <p>{obj.name}</p>
                 <ButtonContainer className="contentButton">

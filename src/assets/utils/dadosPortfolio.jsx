@@ -1,10 +1,10 @@
 import { v1 as uuidv1 } from 'uuid';
-import imgAndroid from '../img/projetos/projeto-android.jpg'
-import imgCordel from '../img/projetos/projeto-cordel.png'
-import imgMovies from '../img/projetos/projeto-movies.png'
-import imgPortfolioWebsite from '../img/projetos/projeto-portfolio-website.jpg'
-import imgAnimate from '../img/projetos/projeto-animate-sprite.png'
-import imgTarefas from '../img/projetos/projeto-tarefas.png'
+import imgAndroid from '../img/projects/projeto-android.jpg'
+import imgCordel from '../img/projects/projeto-cordel.png'
+import imgMovies from '../img/projects/projeto-movies.png'
+import imgPortfolioWebsite from '../img/projects/projeto-portfolio-website.jpg'
+import imgAnimate from '../img/projects/projeto-animate-sprite.png'
+import imgTarefas from '../img/projects/projeto-tarefas.png'
 
 
 export const projects = [

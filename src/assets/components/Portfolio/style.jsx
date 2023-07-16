@@ -34,7 +34,7 @@ export const Container = styled.section`
 
     h1 {
         text-align: center;
-        padding: 90px;
+        padding-top: 90px;
     }
 
     .input{
