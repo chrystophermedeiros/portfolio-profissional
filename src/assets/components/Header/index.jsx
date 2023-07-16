@@ -10,8 +10,8 @@ export function Header() {
   const [open, setOpen] = useState(false);
 
   const handleOpen = () => {
-    setOpen(!open);
-  };
+    setOpen(!open)
+  }
 
   window.onscroll = () => {
     if (window.pageYOffset > 150) {

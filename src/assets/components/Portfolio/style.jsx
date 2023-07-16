@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.section`
-    height: 80vh;
+    height: 100vh;
     width: 90%;
     margin: 0 5%;
 
@@ -34,7 +34,7 @@ export const Container = styled.section`
 
     h1 {
         text-align: center;
-        padding: 30px;
+        padding: 90px;
     }
 
     .input{
