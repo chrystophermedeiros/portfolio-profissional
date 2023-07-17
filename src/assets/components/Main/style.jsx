@@ -4,8 +4,8 @@ import styled from "styled-components";
 export const Container = styled.div`
   
     height: 100%;
-    width: 100%;
-    margin: 0;
+    width: 90%;
+    margin: 0 5%;
     /* background: ${(props) => props.isDark ? '#14fae753' : ''}; */
 `
 

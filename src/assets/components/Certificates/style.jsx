@@ -10,6 +10,10 @@ export const Container = styled.section`
     padding-top: 90px;
   }
 
+  p{
+    font-size: 16px;
+  }
+
   .input {
     width: 80%;
     margin: 2% 10%;
@@ -33,47 +37,47 @@ export const Container = styled.section`
 `;
 
 export const ContainerItems = styled.div`
-    border-radius: 20px;
-    margin: 0 10%;
-   
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
 
-.swiper {
-  width:100%;
-  height: 100%;
-}
-
-.swiper-slide {
-    height: 500px;
-   
-  text-align: center;
-  font-size: 18px;
+  width: 100%;
+ 
   display: flex;
   justify-content: center;
   align-items: center;
-}
 
-.swiper-slide img {
-  display: block;
-  width: 80%;
-  height: 80%;
-  object-fit: cover;
-}
+  .swiper {
+    height: 500px;
+    width: 500px;
 
+  }
+
+  .swiper-slide {
+    height: 90%;
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: flex;
+    width:100%;
+    height: 80%;
+    margin: 0;
+    padding: 20px;
+    object-fit: cover;
+  }
 `;
 
 export const Card = styled.div`
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    background-color: var(--color-bg-variant);
-    
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  
+  background-color: var(--color-bg-variant);
 
   &:hover {
     background-color: transparent;
