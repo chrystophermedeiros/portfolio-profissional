@@ -3,19 +3,21 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   
-    height: 100vh;
+    height: 100%;
     width: 100%;
+    margin: 0;
     /* background: ${(props) => props.isDark ? '#14fae753' : ''}; */
 `
 
 export const ContainerItems = styled.div`
     width: 80%;
+    margin: 10% 10% 0 10%;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 30px;
     gap: 5px;
-    margin: 10% 10% 0 10%;
+    
     @media (max-width: 994px) {
 
         flex-direction: column-reverse;

@@ -1,9 +1,8 @@
 import styled from "styled-components";
 
-export const Container = styled.div`
-    height: 100vh;
-    width: 80%;
-    margin: 0 10%;
+export const Container = styled.section`
+    height: 100%;
+    width: 100%;
     h1{
         text-align: center;
         padding-top: 90px;
@@ -13,6 +12,8 @@ export const Container = styled.div`
 
 
 export const ContainerItems = styled.div`
+    width: 80%;
+    margin: 0 10%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -34,6 +35,7 @@ export const ContainerItems = styled.div`
 `
 
 export const Card = styled.div`
+    
     
 `
 

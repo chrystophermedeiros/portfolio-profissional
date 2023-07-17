@@ -1,13 +1,13 @@
 import { Route, Routes } from 'react-router-dom'
 import { Home } from '../containers/Home/'
-import { Portfolio } from '../components/Portfolio'
+import { Projects } from '../components/Projects'
 
 
 function Router() {
   return (
     <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/portfolio" element={<Portfolio />} />
+        <Route path="/portfolio" element={<Projects />} />
     </Routes>
   )
 }

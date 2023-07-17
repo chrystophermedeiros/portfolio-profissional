@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.section`
-  height: 100vh;
+  height: 100%;
   width: 90%;
   margin: 0 5%;
 
@@ -33,10 +33,13 @@ export const Container = styled.section`
 `;
 
 export const ContainerItems = styled.div`
-    height: 80%;
+    border-radius: 20px;
+    margin: 0 10%;
+   
     display: flex;
     justify-content: center;
     align-items: center;
+    
 
 .swiper {
   width:100%;
@@ -44,8 +47,8 @@ export const ContainerItems = styled.div`
 }
 
 .swiper-slide {
-    height: 100%;
-    width: 100%;
+    height: 500px;
+   
   text-align: center;
   font-size: 18px;
   display: flex;
@@ -67,8 +70,8 @@ export const Card = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 80%;
-    height: 80%;
+    width: 100%;
+    height: 100%;
     background-color: var(--color-bg-variant);
     
 

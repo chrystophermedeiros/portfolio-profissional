@@ -1,5 +1,5 @@
 import { Container, ContainerItems, Card, } from "./style";
-import { certificates } from "../../utils/dadosCertificados";
+import { certificates } from "../../data/dadosCertificados";
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';

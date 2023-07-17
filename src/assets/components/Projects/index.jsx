@@ -1,12 +1,12 @@
 import { Container, ContainerItems, Card, ButtonContainer, ImgCard,} from "./style"
 import Carousel from 'react-elastic-carousel'
-import { projects } from '../../utils/dadosPortfolio'
+import { projects } from '../../data/dadosPortfolio'
 import { Button } from "../Button";
 import React, { useState } from 'react'
 import { FaSistrix } from 'react-icons/fa'
 import { FiGithub} from 'react-icons/fi'
 
-export function Portfolio() {
+export function Projects() {
   const [searchTerm, setSearchTerm] = useState('')
 
   const handleSearch = (event) => {
@@ -28,7 +28,7 @@ export function Portfolio() {
 
   return (
     <Container id={"portfolio"}>
-      <h1>Portfólio</h1>
+      <h1>Projetos</h1>
       <div className="input"><input type="text" placeholder="Procure um projeto" value={searchTerm} onChange={handleSearch} /> <FaSistrix/></div>
 
       <ContainerItems>
