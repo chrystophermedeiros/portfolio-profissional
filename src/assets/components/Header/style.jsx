@@ -1,29 +1,29 @@
-import styled from 'styled-components'
+import styled from "styled-components";
+
 
 export const Container = styled.header`
+ box-shadow: black 0px 10px 30px 1px;
   position: fixed;
   width: 100%;
   top: 0;
-  height: 5%;
+  height: 4%;
   font-weight: 600;
   font-size: 1.2rem;
- 
+
   z-index: 10;
-  background:var(--color-bg);
+  background: var(--color-bg);
 
   a {
     color: aqua;
-    
   }
 
   @media (min-width: 995px) {
-   
     display: flex;
     height: 4rem;
     justify-content: space-around;
     padding: 1rem 0;
     align-items: center;
-    box-shadow: black 0px 10px 30px 1px;
+   
   }
 
   @media (min-width: 2000px) {
@@ -34,15 +34,13 @@ export const Container = styled.header`
   .mobile-content {
     font-weight: 700;
     font-size: 1.2rem;
-    
-   
+
     a {
       display: flex;
       align-items: center;
 
-
       .logo {
-        margin-right: .5rem;
+        margin-right: 0.5rem;
       }
 
       .logo-name {
@@ -54,17 +52,16 @@ export const Container = styled.header`
         &:hover {
           color: white;
           transition-duration: 100ms;
-          margin-top: -.5rem;
+          margin-top: -0.5rem;
         }
       }
     }
 
     @media (max-width: 994px) {
       margin: 0rem 1rem;
-     
     }
   }
-`
+`;
 
 export const MobileIcon = styled.div`
   display: none;
@@ -76,9 +73,7 @@ export const MobileIcon = styled.div`
     cursor: pointer;
     z-index: 20;
   }
-`
-
-
+`;
 
 export const NavMenu = styled.div`
   @media (max-width: 994px) {
@@ -88,7 +83,7 @@ export const NavMenu = styled.div`
     z-index: 10;
     opacity: 0.95;
     position: fixed;
-    transform: ${({ open }) => (open ? 'translateX(0)' : 'translateX(100%)')};
+    transform: ${({ open }) => (open ? "translateX(0)" : "translateX(100%)")};
     transition: transform 0.5s ease-in-out;
   }
 
@@ -112,7 +107,7 @@ export const NavMenu = styled.div`
         position: relative;
 
         &:before {
-          content: '';
+          content: "";
           height: 2px;
           width: auto;
           background-color: #091ce7;
@@ -147,7 +142,7 @@ export const NavMenu = styled.div`
       gap: 1.8rem;
     }
   }
-`
+`;
 
 export const Icons = styled.div`
   @media (min-width: 995px) {
@@ -161,4 +156,4 @@ export const Icons = styled.div`
   margin-top: 1.7rem;
   font-size: 1.5rem;
   cursor: pointer;
-`
+`;

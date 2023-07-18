@@ -1,7 +1,7 @@
 import ImgCtDevClub from '../img/certificates/certificado-DevClub-FS.jpg'
 import ImgCtCursoemvideo1 from '../img/certificates/certificado-HTML5-e-CSS3-modulo-1-de-5.jpg'
-import ImgCtCursoemvideo2 from '../img/certificates/certificado-HTML5-e-CSS3-modulo-1-de-5.jpg'
-import ImgCtCursoemvideo3 from '../img/certificates/certificado-HTML5-e-CSS3-modulo-1-de-5.jpg'
+import ImgCtCursoemvideo2 from '../img/certificates/certificado-HTML5-e-CSS3-modulo-2-de-5.jpg'
+import ImgCtCursoemvideo3 from '../img/certificates/certificado-HTML5-e-CSS3-modulo-3-de-5.jpg'
 
 export const certificates = [
     {   id:1,

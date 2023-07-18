@@ -11,7 +11,7 @@ export function Main() {
             <ContainerItems>
                 <Card>
                     <h1>Seja bem vindo, </h1>
-                    <h2> Chrystopher Medeiros</h2>
+                    <h2>Chrystopher Medeiros</h2>
                     <h3>Desenvolvedor Front - End</h3>
                     <ContainerButton>
                         <a target="_blank" href="https://www.linkedin.com/in/chrystopher-medeiros"><Button className="button" btn1><FiLinkedin className="icon"/></Button></a>

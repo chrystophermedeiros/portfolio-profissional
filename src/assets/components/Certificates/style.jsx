@@ -61,6 +61,7 @@ export const ContainerItems = styled.div`
 
   .swiper-slide img {
     display: flex;
+    border-radius: 30px;
     width:100%;
     height: 80%;
     margin: 0;
@@ -76,6 +77,7 @@ export const Card = styled.div`
   align-items: center;
   width: 100%;
   height: 100%;
+  border-radius: 30px;
   
   background-color: var(--color-bg-variant);
 

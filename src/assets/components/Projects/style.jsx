@@ -70,8 +70,8 @@ export const ContainerItems = styled.div`
 `
 
 export const Card = styled.div`
-    height: 400px;
-    width: 400px;
+    height: 500px;
+    width: 500px;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
@@ -82,8 +82,7 @@ export const Card = styled.div`
     padding: 10px;
     margin: 5px;
     @media (max-width: 994px) {
-        width: 300px;
-        height: 300px;
+      
 }
 
 
