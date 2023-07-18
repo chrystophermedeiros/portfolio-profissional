@@ -17,6 +17,14 @@ export const ContainerItems = styled.div`
     justify-content: center;
     padding: 30px;
     gap: 5px;
+
+    .cv{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 60px;
+           
+        }
     
     @media (max-width: 994px) {
         margin-top: 20%;
@@ -71,6 +79,8 @@ export const ContainerButton = styled.div`
               font-size: 30px;
             
         }
+
+     
    
         }
 

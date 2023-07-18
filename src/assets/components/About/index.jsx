@@ -1,5 +1,5 @@
 import { Container, ContainerItems, AboutImg, Card } from "./style";
-import I from "../../img/sobre.svg";
+import I from "../../img/i/sobre.jpeg";
 
 export function About() {
   return (
