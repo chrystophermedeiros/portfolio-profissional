@@ -6,7 +6,7 @@ export const Container = styled.header`
   position: fixed;
   width: 100%;
   top: 0;
-  height: 4%;
+  height: 5%;
   font-weight: 600;
   font-size: 1.2rem;
 

@@ -79,7 +79,7 @@ export const Card = styled.div`
     justify-content: center;
     gap: 2px;
     background-color: var(--color-bg-variant);
-    padding: 10px;
+    padding: 20px;
     margin: 5px;
     @media (max-width: 994px) {
       
@@ -99,6 +99,7 @@ export const ImgCard = styled.div`
     height: 100%;
     width: 100%;
     border-radius: 10px;
+    margin-bottom: 20px;
     background-image: url(${(props) => props.isImg});
     background-size: cover;
     background-repeat: no-repeat;
