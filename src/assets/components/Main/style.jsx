@@ -22,7 +22,8 @@ export const ContainerItems = styled.div`
             display: flex;
             justify-content: center;
             align-items: center;
-            margin-top: 60px;
+            
+    
            
         }
     
@@ -44,6 +45,12 @@ export const ContainerItems = styled.div`
 `
 
 export const Card = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ 
+    
+
 `
 
 export const MyImg = styled.img`
