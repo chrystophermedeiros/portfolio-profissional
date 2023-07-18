@@ -15,6 +15,7 @@ export const Container = styled.section`
 
     @media (max-width: 994px) {
         letter-spacing: 0px;
+        text-align: center;
     }
   }
 `;
