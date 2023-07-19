@@ -32,7 +32,9 @@ export const Card = styled.div`
   gap: 10px;
 
   img{
-    width: 70%;
+    height: 80%;
+    padding: 20px;
+   
   }
   @media (max-width: 994px) {
   }
