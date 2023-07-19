@@ -85,6 +85,7 @@ export const NavMenu = styled.div`
     position: fixed;
     transform: ${({ open }) => (open ? "translateX(0)" : "translateX(100%)")};
     transition: transform 0.5s ease-in-out;
+   
   }
 
   ul {

@@ -4,8 +4,9 @@ import { FiGithub, FiLinkedin } from 'react-icons/fi'
 import { FaWhatsapp } from 'react-icons/fa'
 import { useState } from 'react'
 import { Link } from "react-router-dom"
+import {MdLightMode, MdModeNight} from 'react-icons/md'
 
-export function Header() {
+export function Header({handleDarkModeToggle, icon}) {
   const [changeBackground, setChangeBackground] = useState(false);
   const [open, setOpen] = useState(false);
 
@@ -82,6 +83,9 @@ export function Header() {
             <Link to="/contact">
               <span>Contato</span>
             </Link>
+          </li>
+          <li>
+            <a ><span onClick={handleDarkModeToggle} >{icon}</span></a>
           </li>
         </ul>
 
