@@ -36,7 +36,7 @@ export function Main() {
           </ContainerButton>
           <a className="cv"target="_blank" href={CV}>
             <Button  btn1>
-              Download CV <AiOutlineDownload className="icon" />{" "}
+              Download CV <AiOutlineDownload className="icon" />
             </Button>
           </a>
         </Card>
