@@ -11,7 +11,7 @@ export const Container = styled.div`
 
 export const ContainerItems = styled.div`
     width: 100%;
-    margin: 10% 0;
+   
     display: flex;
     align-items: center;
     justify-content: center;
@@ -28,7 +28,6 @@ export const ContainerItems = styled.div`
         }
     
     @media (max-width: 994px) {
-        margin-top: 20%;
 
         flex-direction: column-reverse;
         gap: 1.5rem;
