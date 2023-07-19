@@ -1,5 +1,11 @@
 import imgHTML from "../img/skills/html.svg"
 import imgCSS from "../img/skills/css.svg"
+import imgJS from "../img/skills/javascript.svg"
+import imgReact from "../img/skills/react.svg"
+import imgSytleC from "../img/skills/styled-components.svg"
+import imgMaterialUi from "../img/skills/material-ui.svg"
+import imgGit from "../img/skills/git.svg"
+
 const skills = [
     {
       id: 1,
@@ -16,7 +22,7 @@ const skills = [
     {
       id: 3,
       title: 'JavaScript',
-      img: '../src/assets/img/skills/javascript.svg',
+      img: imgJS,
       color: '#fefe01'
     },
     // {
@@ -28,7 +34,7 @@ const skills = [
     {
       id: 5,
       title: 'React JS',
-      img: '/skills/react.svg',
+      img: imgReact,
       color: '#61DAFB'
     },
     // {
@@ -40,7 +46,7 @@ const skills = [
     {
       id: 7,
       title: 'Styled Components',
-      img: '/skills/styled-components.svg',
+      img: imgSytleC,
       color: '#9F70B8'
     },
     // {
@@ -52,7 +58,7 @@ const skills = [
     {
       id: 9,
       title: 'Material UI',
-      img: '/skills/material-ui.svg',
+      img: imgMaterialUi,
       color: '#007fff'
     },
     // {
@@ -64,7 +70,7 @@ const skills = [
     {
       id: 11,
       title: 'Git',
-      img: '/skills/git.svg',
+      img: imgGit,
       color: '#de4736'
     },
   
