@@ -9,6 +9,7 @@ import I from "../../img/i/eu.png";
 import { Button } from "../Button";
 import { FiGithub, FiLinkedin } from "react-icons/fi";
 import { AiOutlineDownload } from "react-icons/Ai";
+import CV from "../../img/cv/cv.pdf"
 
 export function Main() {
   return (
@@ -33,7 +34,7 @@ export function Main() {
               </Button>
             </a>
           </ContainerButton>
-          <a className="cv"target="_blank" href="https://github.com/chrystophermedeiros">
+          <a className="cv"target="_blank" href={CV}>
             <Button  btn1>
               Download CV <AiOutlineDownload className="icon" />{" "}
             </Button>
