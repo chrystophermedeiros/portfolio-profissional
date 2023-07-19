@@ -8,7 +8,7 @@ import {
 import I from "../../img/i/eu.png";
 import { Button } from "../Button";
 import { FiGithub, FiLinkedin } from "react-icons/fi";
-import { AiOutlineDownload } from "react-icons/Ai";
+import { AiOutlineDownload } from "react-icons/ai";
 import CV from "../../img/cv/cv.pdf"
 
 export function Main() {
