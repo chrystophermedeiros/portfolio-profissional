@@ -25,9 +25,14 @@ export const Card = styled.div`
   margin: 5px;
   border:2px solid ${(props) => props.isBorder};
   border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
 
   img{
-    width: 100px;
+    width: 70%;
   }
   @media (max-width: 994px) {
   }
