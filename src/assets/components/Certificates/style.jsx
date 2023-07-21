@@ -51,7 +51,7 @@ export const ContainerItems = styled.div`
   }
 
   .swiper-slide {
-    height: 90%;
+    height: 85%;
     text-align: center;
     font-size: 18px;
     display: flex;
@@ -62,11 +62,21 @@ export const ContainerItems = styled.div`
   .swiper-slide img {
     display: flex;
     border-radius: 30px;
-    width:100%;
-    height: 80%;
+    height: 60%;
     margin: 0;
     padding: 20px;
     object-fit: cover;
+  }
+
+  .teste{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+  
+    img{
+      width: 80px;
+    }
   }
 `;
 

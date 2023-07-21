@@ -1,28 +1,29 @@
-import { Container, ContainerItems, Card, } from "./style";
+import { Container, ContainerItems, Card } from "./style";
 import { certificates } from "../../data/dadosCertificados";
-import { Autoplay, Pagination, Navigation } from 'swiper/modules';
-import 'swiper/css';
-import 'swiper/css/pagination';
-import 'swiper/css/navigation';
+import { Autoplay, Pagination, Navigation } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { FaSistrix } from 'react-icons/fa'
+import { FaSistrix } from "react-icons/fa";
 // import { Button } from "../Button";
 import React, { useState } from "react";
 
 export function Certificates() {
-  const imagens = Image
+  const imagens = Image;
   const [searchTerm, setSearchTerm] = useState("");
 
   const handleSearch = (event) => {
     setSearchTerm(event.target.value);
   };
 
-  const filteredProjects = certificates.filter((certificate) =>
-    certificate.name.toLowerCase().includes(searchTerm.toLowerCase())
+  const filteredProjects = certificates.filter(
+    (certificate) =>
+      certificate.name.toLowerCase().includes(searchTerm.toLowerCase()) 
   );
 
   return (
-    <Container >
+    <Container>
       <h1>Certificados</h1>
       <div className="input">
         <input
@@ -37,7 +38,7 @@ export function Certificates() {
       <ContainerItems>
         {filteredProjects.length > 0 ? (
           <Swiper
-          slidesPerView={'1'}
+            slidesPerView={"1"}
             spaceBetween={10}
             centeredSlides={true}
             autoplay={{
@@ -53,11 +54,20 @@ export function Certificates() {
           >
             {filteredProjects &&
               filteredProjects.map((obj, index) => (
-                <SwiperSlide className="teste" key={index.id}>
-                  <Card >
+                <SwiperSlide key={index.id}>
+                  <Card>
                     <img src={obj.img} alt="" />
                     <p>{obj.name}</p>
                     <p>{obj.date}</p>
+                    <div className="teste">
+                      {obj.tag.map((tag) => {
+                        return (
+                          <div key={tag.id}>
+                            <img src={tag.img} alt="" />
+                          </div>
+                        );
+                      })}
+                    </div>
                   </Card>
                 </SwiperSlide>
               ))}
