@@ -62,7 +62,7 @@ export const ContainerItems = styled.div`
   .swiper-slide img {
     display: flex;
     border-radius: 30px;
-    height: 60%;
+    height: 70%;
     margin: 0;
     padding: 20px;
     object-fit: cover;
@@ -75,7 +75,7 @@ export const ContainerItems = styled.div`
   
   
     img{
-      width: 80px;
+      width: 70px;
     }
   }
 `;
