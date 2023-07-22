@@ -2384,6 +2384,10 @@ phosphor-react@^1.4.1:
   version "1.4.1"
   resolved "https://registry.yarnpkg.com/phosphor-react/-/phosphor-react-1.4.1.tgz#97b0e034d9937db9b97fe53b186e9646464fd4e7"
 
+phosphor@^0.7.1:
+  version "0.7.1"
+  resolved "https://registry.yarnpkg.com/phosphor/-/phosphor-0.7.1.tgz#fad12fe9568bc85e89c6d57326ba58d27a1d2b21"
+
 picocolors@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/picocolors/-/picocolors-1.0.0.tgz#cb5bdc74ff3f51892236eaf79d68bc44564ab81c"
@@ -2748,7 +2752,6 @@ supports-preserve-symlinks-flag@^1.0.0:
 swiper@^10.0.4:
   version "10.0.4"
   resolved "https://registry.yarnpkg.com/swiper/-/swiper-10.0.4.tgz#eb79eb518d740795d3b4247f404674f89c4e404e"
-  integrity sha512-DlNR3KiaVkPep6RraZ2tNr7lvyuzELuR+4NZr4wO42t0UworIO3DxDlz8b5Q3uUioh7cJad99EdRJLkPF+r8Ag==
 
 text-table@^0.2.0:
   version "0.2.0"

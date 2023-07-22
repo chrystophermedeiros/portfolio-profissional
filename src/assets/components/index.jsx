@@ -5,6 +5,9 @@ export * from "./Header"
 export * from "./Main"
 export * from "./Projects"
 export * from "./Skills"
+export * from "./Footer"
+export * from "./Contact"
+export * from "./ScrollTop"
 
 
 
