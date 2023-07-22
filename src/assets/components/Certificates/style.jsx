@@ -45,8 +45,8 @@ export const ContainerItems = styled.div`
   align-items: center;
 
   .swiper {
-    height: 500px;
-    width: 500px;
+    height: 600px;
+    width: 600px;
 
   }
 
@@ -68,14 +68,19 @@ export const ContainerItems = styled.div`
     object-fit: cover;
   }
 
-  .teste{
+  .skills{
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 20px;
+  
   
   
     img{
-      width: 70px;
+      width: 40px;
+      padding: 0;
+      border-radius: 0;
+    
     }
   }
 `;

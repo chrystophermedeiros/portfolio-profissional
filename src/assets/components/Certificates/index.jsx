@@ -13,14 +13,18 @@ export function Certificates() {
   const imagens = Image;
   const [searchTerm, setSearchTerm] = useState("");
 
+
   const handleSearch = (event) => {
     setSearchTerm(event.target.value);
   };
 
-  const filteredProjects = certificates.filter(
-    (certificate) =>
-      certificate.name.toLowerCase().includes(searchTerm.toLowerCase()) 
-  );
+
+  const filteredProjects = certificates.filter((certificate) =>
+  certificate.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
+  certificate.tag.some((tag) => tag.name.toLowerCase().includes(searchTerm.toLowerCase()))
+);
+
+
 
   return (
     <Container>
@@ -28,7 +32,7 @@ export function Certificates() {
       <div className="input">
         <input
           type="text"
-          placeholder="Procure um certificado"
+          placeholder="Procure um certificado ou skills"
           value={searchTerm}
           onChange={handleSearch}
         />{" "}
@@ -59,7 +63,7 @@ export function Certificates() {
                     <img src={obj.img} alt="" />
                     <p>{obj.name}</p>
                     <p>{obj.date}</p>
-                    <div className="teste">
+                    <div className="skills">
                       {obj.tag.map((tag) => {
                         return (
                           <div key={tag.id}>
