@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components'
+import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
 
@@ -16,6 +16,26 @@ const GlobalStyle = createGlobalStyle`
     appearance: none;
     text-decoration:none;
     list-style: none;
+
+      &::-webkit-scrollbar {
+        width: 10px;
+        height: 10px;
+        
+    
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #8052EC;
+    border-radius: 4px;
+    /* Ajuste o tamanho da rolagem interna aqui */
+    width: 6px; /* Largura da rolagem interna */
+    height: 10px; /* Altura da rolagem interna */
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: #f5f5f5;
+    border-radius: 4px;
+  }
 
 
 }
@@ -37,6 +57,6 @@ body {
 
 
  
-`
+`;
 
-export default GlobalStyle
+export default GlobalStyle;
