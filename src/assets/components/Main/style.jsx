@@ -82,7 +82,7 @@ export const ContainerButton = styled.div`
            
             
              .icon{
-              font-size: 30px;
+              font-size: 25px;
             
         }
 

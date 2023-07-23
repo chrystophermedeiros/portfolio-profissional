@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const FooterContainer = styled.footer`
   margin-top: 5rem;
-  border-top: 1px solid red;
+  border-top: 1px solid aqua;
   padding: 1.4rem 0;
 
   display: flex;
@@ -18,19 +18,23 @@ export const FooterContainer = styled.footer`
 
   h4 {
     font-size: 1.1rem;
-    color: red;
+    color: aqua;
   }
 
   .links {
+    
     cursor: pointer;
     display: flex;
     gap: 9px;
     font-size: 1.4rem;
-    color: red;
+    color: aqua;
 
     a {
+      text-decoration: none;
+      color: white;
+
       &:hover {
-        color: red;
+        color: aqua;
       }
     }
   }
