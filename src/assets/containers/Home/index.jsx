@@ -1,7 +1,9 @@
 import React, { useEffect, useState, useMemo } from "react";
 import { Container, ContainerItems } from "./style";
-import { Header, About, Main, Certificates, Projects, Skills, Footer, Contact, ScrollTop } from "../../components/";
+import { Header, About, Main, Certificates, Projects, Skills, Footer, Contact, ScrollTop, Experience } from "../../components/";
 import { MdLightMode, MdModeNight } from "react-icons/md";
+
+
 
 export function Home() {
   const [isDark, setIsDark] = useState(() => localStorage.getItem("isDark") === "true");
@@ -19,14 +21,14 @@ export function Home() {
   return (
     <Container isDark={isDark}>
       <Header handleDarkModeToggle={handleDarkModeToggle} icon={icon} />
-      <ContainerItems>
+      <ContainerItems id="home">
         <Main />
         <About />
         <Skills />
-        <Certificates />
-        <Projects />
+        <Experience/>
+        <Projects/>
+        <ScrollTop />
        {/* <Contact/> */}
-       <ScrollTop/>
       </ContainerItems>
       <Footer/>
     </Container>

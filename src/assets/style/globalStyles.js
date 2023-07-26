@@ -54,6 +54,9 @@ body {
     background-color: #f5f5f5;
     border-radius: 4px;
   }
+  h1{
+    font-size: 2rem;
+  }
 }
 
 

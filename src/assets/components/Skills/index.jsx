@@ -1,9 +1,9 @@
-import skills from "../../data/dadosSkills";
+import {skills} from "../../data/skills";
 import { Container, ContainerItems, Card } from "./style";
 export function Skills() {
   return (
     <Container>
-        <h1>Skills</h1>
+        <h1>Habilidades</h1>
       <ContainerItems>
           {skills && skills.map((obj) => (
             <Card isBorder = {obj.color}>

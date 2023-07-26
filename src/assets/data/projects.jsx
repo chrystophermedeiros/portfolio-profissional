@@ -5,7 +5,7 @@ import imgMovies from "../img/projects/projeto-movies.png";
 import imgPortfolioWebsite from "../img/projects/projeto-portfolio-website.jpg";
 import imgAnimate from "../img/projects/projeto-animate-sprite.png";
 import imgTarefas from "../img/projects/projeto-tarefas.png";
-import skills from "./dadosSkills";
+import skills from "./skills";
 
 export const projects = [
   {

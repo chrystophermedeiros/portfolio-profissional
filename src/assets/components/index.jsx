@@ -8,7 +8,8 @@ export * from "./Skills"
 export * from "./Footer"
 export * from "./Contact"
 export * from "./ScrollTop"
-
+export * from "./Work"
+export * from "./Experience"
 
 
 

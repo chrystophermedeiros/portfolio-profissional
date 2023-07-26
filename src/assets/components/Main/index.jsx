@@ -13,7 +13,7 @@ import CV from "../../img/cv/cv.pdf"
 
 export function Main() {
   return (
-    <Container id="home">
+    <Container >
       <ContainerItems>
         <Card>
           <h1>Seja bem vindo, </h1>

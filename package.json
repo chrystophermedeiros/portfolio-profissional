@@ -10,6 +10,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@mui/material": "^5.14.1",
+    "@mui/styled-engine-sc": "^5.12.0",
     "i": "^0.3.7",
     "phosphor": "^0.7.1",
     "phosphor-react": "^1.4.1",
@@ -18,7 +22,7 @@
     "react-elastic-carousel": "^0.11.5",
     "react-icons": "^4.10.1",
     "react-router-dom": "^6.14.1",
-    "styled-components": "^6.0.3",
+    "styled-components": "^6.0.5",
     "swiper": "^10.0.4",
     "uuid": "^9.0.0"
   },

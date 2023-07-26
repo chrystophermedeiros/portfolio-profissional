@@ -6,7 +6,7 @@ import {
   ImgCard,
 } from "./style";
 import Carousel from "react-elastic-carousel";
-import { projects } from "../../data/dadosPortfolio";
+import { projects } from "../../data/projects";
 import { Button } from "../Button";
 import React, { useState } from "react";
 import { FaSistrix } from "react-icons/fa";

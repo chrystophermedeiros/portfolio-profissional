@@ -6,7 +6,7 @@ import imgSytleC from "../img/skills/styled-components.svg"
 import imgMaterialUi from "../img/skills/material-ui.svg"
 import imgGit from "../img/skills/git.svg"
 
-const skills = [
+export const skills = [
     {
       id: 1,
       title: 'HTML',

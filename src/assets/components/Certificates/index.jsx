@@ -1,12 +1,11 @@
 import { Container, ContainerItems, Card } from "./style";
-import { certificates } from "../../data/dadosCertificados";
+import { certificates } from "../../data/certificates";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { FaSistrix } from "react-icons/fa";
-// import { Button } from "../Button";
 import React, { useState } from "react";
 
 export function Certificates() {
@@ -28,7 +27,7 @@ export function Certificates() {
 
   return (
     <Container>
-      <h1>Certificados</h1>
+  
       <div className="input">
         <input
           type="text"

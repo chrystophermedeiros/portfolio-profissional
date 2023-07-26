@@ -1,16 +1,14 @@
 import styled from "styled-components";
 
 export const Container = styled.section`
-  height: 100%;
-  width: 90%;
-  margin: 0 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+  margin: 0 20%;
 
-  h1 {
-    text-align: center;
-    padding-top: 90px;
-  }
-
-  p{
+  p {
     font-size: 16px;
   }
 
@@ -37,64 +35,49 @@ export const Container = styled.section`
 `;
 
 export const ContainerItems = styled.div`
-
-  width: 100%;
- 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
   .swiper {
-    height: 600px;
-    width: 600px;
-
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   }
 
   .swiper-slide {
-    height: 85%;
+
     text-align: center;
     font-size: 18px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+
   }
 
-  .swiper-slide img {
-    display: flex;
-    border-radius: 30px;
-    height: 70%;
-    margin: 0;
-    padding: 20px;
-    object-fit: cover;
-  }
-
-  .skills{
+  .skills {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 20px;
-  
-  
-  
-    img{
+
+    img {
       width: 40px;
       padding: 0;
       border-radius: 0;
-    
     }
   }
 `;
 
 export const Card = styled.div`
+  background-color: var(--color-bg-variant);
+
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 100%;
   border-radius: 30px;
-  
-  background-color: var(--color-bg-variant);
+  img {
+    height: 70%;
+    width: 70%;
+    border-radius: 30px;
+    margin: 0;
+    padding: 20px;
+  }
 
   &:hover {
     background-color: transparent;

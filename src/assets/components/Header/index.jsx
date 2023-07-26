@@ -50,7 +50,7 @@ export function Header({handleDarkModeToggle, icon}) {
       <NavMenu onClick={handleOpen} open={open}>
         <ul>
           <li>
-            <a href="/">
+            <a href="#home">
               <span>Home</span>
             </a>
           </li>
@@ -62,7 +62,7 @@ export function Header({handleDarkModeToggle, icon}) {
           </li>
 
           <li>
-            <a href="">
+            <a href="#experience">
               <span>Experiência</span>
             </a>
           </li>
