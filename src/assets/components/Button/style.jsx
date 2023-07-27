@@ -16,9 +16,9 @@ const buttonStyled = css`
   }
 
   &:hover {
-    color: #ff0000;
-    background: #ffffff;
-    border: 3px solid #ff0000;
+    color: var(--color-primary);
+    background: var(--color-white);
+    border: 3px solid var(--color-primary-variant);
   }
 `
 
@@ -33,8 +33,8 @@ export const ButtonPrimary = styled.button`
   box-shadow: 0px 0px 7px 8px rgb(10 10 20 /20%);
 
   &:hover {
-    box-shadow: 0px 0px 7px 12px rgb(255 0 0 /20%);
-    background: #ff0000;
+    box-shadow: 0px 0px 7px 12px rgb(77 181 255 /20%);
+    background: var(--color-primary-variant);
     color: #ffffff;
   }
 `

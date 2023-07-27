@@ -1,42 +1,43 @@
-import {work} from "../../data/work"
-import {Container, ContainerItems, Card} from './style'
+import { work } from "../../data/work";
+import { Container, ContainerItems, Card } from "./style";
 
 export function Work() {
-    return (
-        <Container>
-            
-            <ContainerItems>
-                 
-                    {
-                        work.map((obj) =>(
-                            <Card>
-                                <div>
-                                    <img src={obj.img} alt="" />
-                                    <p>{obj.institution}</p>
-                                    <p>{obj.office}</p>
-                                </div>
-                                <div>
-                                    <p>{obj.startdate}</p>
-                                    <p>{obj.enddate}</p>
-                                </div>
-                                
-                               
-                                <div>
-                                     <p>{obj.about}</p>
-                                    <h2>Techs:</h2>
-                                    {obj.techs.map((tech) => (
-                                    
-                                        <img src={tech.img} alt="" />
-                                    ))}
-                                </div>
-                            </Card>
-                        ))
-                    }
+  return (
+    <Container>
+      <ContainerItems>
+        {work.map((obj) => (
+          <Card>
+            <header>
+              <article className="conatinerLeft">
+                <img src={obj.img} alt="" />
+                <div className="left">
+                  <p className="institution">{obj.institution}</p>
+                  <p className="oficce">{obj.office}</p>
+                </div>
+              </article>
+              <article>
+                <p>
+                  {obj.startdate} - {obj.enddate}
+                </p>
+              </article>
+            </header>
 
-       
-            
-            </ContainerItems>
-            
-        </Container>
-    )
+            <article className="about">
+              <p>{obj.about}</p>
+              <h2>Techs:</h2>
+
+              <div className="techs">
+                  {obj.techs.map((tech) => (
+                    <div className="containerTechs" key={tech.id} >
+                      <img src={tech.img} alt="" />
+                      <p>{tech.name}</p>
+                    </div>
+                  ))}
+              </div>
+            </article>
+          </Card>
+        ))}
+      </ContainerItems>
+    </Container>
+  );
 }

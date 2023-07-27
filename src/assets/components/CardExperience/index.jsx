@@ -55,22 +55,24 @@ export default function VerticalTabs() {
       <Box 
         className="box"
       >
-        <Tabs className="teste"
-          orientation="vertical"
-          variant="scrollable"
+        <Tabs 
           value={value}
           onChange={handleChange}
+          // variant="scrollable"
+          // scrollButtons="auto"
+          textColor=""
           aria-label="Vertical tabs example"
-          sx={{ borderRight: 1, borderColor: "divider", width: "20%" }}
+          sx={{ borderRight: 1, borderColor: "divider" }}
         >
-          <Tab label="Trabalho" {...a11yProps(0)} />
-          <Tab label="Certificados" {...a11yProps(1)} />
-          <Tab label="Item Three" {...a11yProps(2)} />
+          <Tab  label="Trabalho" {...a11yProps(0)} />
+          <Tab  label="Certificados" {...a11yProps(1)} />
+          <Tab  label="Item Three" {...a11yProps(2)} />
+         
         </Tabs>
-        <TabPanel className="doido" value={value} index={0}>
+        <TabPanel  value={value} index={0}>
           <Work/>
         </TabPanel>
-        <TabPanel className="doido" value={value} index={1}>
+        <TabPanel  value={value} index={1}>
           <Certificates/>
         </TabPanel>
         <TabPanel value={value} index={2}>

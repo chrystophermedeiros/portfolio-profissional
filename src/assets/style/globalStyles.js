@@ -1,5 +1,4 @@
 import { createGlobalStyle } from "styled-components";
-
 const GlobalStyle = createGlobalStyle`
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700;800&display=swap');
@@ -16,6 +15,7 @@ const GlobalStyle = createGlobalStyle`
     appearance: none;
     text-decoration:none;
     list-style: none;
+    
 
 
 
@@ -34,6 +34,9 @@ const GlobalStyle = createGlobalStyle`
 body {
     background: var(--color-bg);
     color: var(--color-white);
+    background-image: url(../src/assets/img/bg-texture.png);
+   
+   
     
     &::-webkit-scrollbar {
         width: 10px;

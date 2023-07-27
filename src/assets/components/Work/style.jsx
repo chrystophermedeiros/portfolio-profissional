@@ -1,43 +1,101 @@
 import styled from "styled-components";
-export const Container = styled.section`
+export const Container = styled.main`
   height: 100%;
   width: 100%;
-  
-
-  h1 {
-        text-align: center;
-        padding-top: 90px;
-    }
-
 `;
 
 export const ContainerItems = styled.div`
-  img{
+  img {
     width: 40px;
   }
 
   display: grid;
   gap: 20px;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 `;
 
 export const Card = styled.div`
-border: 2px solid black;
-  width: 100%;
+  border: 2px solid black;
+  gap: 20px;
   border-radius: 20px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
 
+  background: var(--color-bg-variant);
+  padding: 20px;
 
+  .about {
 
-  @media (max-width: 994px) {
+    p {
+      
+      line-height: 25px;
+      margin-bottom: 20px;
+    }
+    h2{
+      color: var(--color-primary);
+    }
+
+    .techs{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    img{
+      width: 40px;
+
+    }
+
+    .containerTechs{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+    }
+   
+
+  }
+  
   }
 
+
+
   &:hover {
-    /* background-color: transparent; */
+    background-color: transparent;
     transition: all 400ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
+  }
+
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    p {
+      line-height: 25px;
+    }
+
+    .institution {
+      font-size: 1.5rem;
+      color: var(--color-primary);
+    }
+
+    .oficce {
+      color: var(--color-primary-variant);
+    }
+
+    .conatinerLeft {
+      display: flex;
+      gap: 10px;
+
+      img {
+        width: 40px;
+      }
+
+      .left {
+        display: flex;
+        flex-direction: column;
+      }
+    }
   }
 `;

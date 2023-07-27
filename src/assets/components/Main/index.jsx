@@ -9,11 +9,11 @@ import I from "../../img/i/eu.png";
 import { Button } from "../Button";
 import { FiGithub, FiLinkedin } from "react-icons/fi";
 import { AiOutlineDownload } from "react-icons/ai";
-import CV from "../../img/cv/cv.pdf"
+import CV from "../../img/cv/cv.pdf";
 
 export function Main() {
   return (
-    <Container >
+    <Container>
       <ContainerItems>
         <Card>
           <h1>Seja bem vindo, </h1>
@@ -34,8 +34,8 @@ export function Main() {
               </Button>
             </a>
           </ContainerButton>
-          <a className="cv"target="_blank" href={CV}>
-            <Button  btn1>
+          <a className="cv" target="_blank" href={CV}>
+            <Button btn1>
               Download CV <AiOutlineDownload className="icon" />
             </Button>
           </a>
