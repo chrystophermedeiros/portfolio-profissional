@@ -55,7 +55,7 @@ export function Projects() {
             {filteredProjects &&
               filteredProjects.map((obj) => (
                 <Card key={obj.id}>
-                  <ImgCard className="cardImg" isImg={obj.img}></ImgCard>
+                  <ImgCard className="cardImg" src={obj.img}/>
                   <p>{obj.name}</p>
                   <ButtonContainer className="contentButton">
                     <a target="_blank" href={obj.path}>

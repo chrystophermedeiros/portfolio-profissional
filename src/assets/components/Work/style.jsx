@@ -2,12 +2,14 @@ import styled from "styled-components";
 export const Container = styled.main`
   height: 100%;
   width: 100%;
+
 `;
 
 export const ContainerItems = styled.div`
   img {
     width: 40px;
   }
+  width: 100%;
 
   display: grid;
   gap: 20px;
@@ -25,41 +27,32 @@ export const Card = styled.div`
   padding: 20px;
 
   .about {
-
     p {
-      
       line-height: 25px;
       margin-bottom: 20px;
     }
-    h2{
+    h2 {
       color: var(--color-primary);
     }
 
-    .techs{
-    margin-top: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-
-    img{
-      width: 40px;
-
-    }
-
-    .containerTechs{
+    .techs {
+      margin-top: 20px;
       display: flex;
-      flex-direction: column;
-      justify-content: center;
       align-items: center;
+      justify-content: space-evenly;
 
+      img {
+        width: 40px;
+      }
+
+      .containerTechs {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
     }
-   
-
   }
-  
-  }
-
-
 
   &:hover {
     background-color: transparent;

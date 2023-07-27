@@ -61,7 +61,7 @@ export const ContainerItems = styled.div`
 
 export const Card = styled.div`
   display: grid;
-  height: 35vh;
+ 
   width: 100%;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   border-radius: 20px;
@@ -115,16 +115,14 @@ export const Card = styled.div`
   }
 `;
 
-export const ImgCard = styled.div`
+export const ImgCard = styled.img`
   overflow: hidden;
-  height: 100%;
+  height: 80%;
   width: 100%;
+
   border-radius: 10px;
   margin-bottom: 20px;
-  background-image: url(${(props) => props.isImg});
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+
 `;
 
 export const ButtonContainer = styled.div`

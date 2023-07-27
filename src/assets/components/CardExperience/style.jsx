@@ -13,14 +13,9 @@ export const Container = styled.section`
     display: flex;
     flex-direction: column;
     flex-grow: 1;
-    
 
     border-radius: 20px;
-    
   }
-
-
-
 
   .MuiTabs-flexContainer {
     display: flex;
@@ -28,14 +23,12 @@ export const Container = styled.section`
     justify-content: center;
     align-items: center;
     color: white;
-    
+
     border-radius: 19px;
     border: none;
   }
 
-  .MuiTabs-indicator{
+  .MuiTabs-indicator {
     background: var(--color-primary);
-  } 
-  
-
+  }
 `;
