@@ -17,8 +17,11 @@ export function Work() {
               </article>
               <article>
                 <p>
-                  {obj.startdate} - {obj.enddate}
+                  {obj.startdate} - {obj.enddate} 
+
+            
                 </p>
+             
               </article>
             </header>
 

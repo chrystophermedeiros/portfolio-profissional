@@ -5,7 +5,7 @@ import { FooterContainer } from './style';
 export function Footer() {
   return (
     <FooterContainer>
-      <h4> &copy; {new Date().getFullYear()} Chrystopher Medeiros</h4>
+      <h4> &copy;  Chrystopher Medeiros</h4>
       <div className="links">
         <a href="https://github.com/chrystophermedeiros" target="_blank" rel="noopener noreferrer" aria-label="Link para o Github">
           <FiGithub />

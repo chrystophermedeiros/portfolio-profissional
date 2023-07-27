@@ -1,6 +1,8 @@
 import {skills} from './skills'
 import imgFreeLancer from '../img/work/frelancer.svg'
 
+const currentDate = new Date().getFullYear();
+
 export const work = [
   {
     id: 1,
@@ -9,9 +11,10 @@ export const work = [
     img: imgFreeLancer,
     about:
       "sou especializado em HTML, CSS, JavaScript e frameworks como React. Tenho habilidades comprovadas como freelancer, entregando soluções de alta qualidade para clientes diversos.",
-    startdate: 2023,
-    enddate: "Atual",
+    startdate: 2020,
+    enddate: currentDate,
 
+  
     techs: [
       { id: 1, name: "HTML", title: skills[0].title, img: skills[0].img },
       { id: 2, name: "CSS", title: skills[1].title, img: skills[1].img },
@@ -22,13 +25,13 @@ export const work = [
 
   {
     id: 2,
-    institution: "Freelancer",
-    office: "Desenvolvedor Front-end",
+    institution: "UPA",
+    office: "Analista de TI",
     img: imgFreeLancer,
     about:
       "sou especializado em HTML, CSS, JavaScript e frameworks como React. Tenho habilidades comprovadas como freelancer, entregando soluções de alta qualidade para clientes diversos.",
-    startdate: 2023,
-    enddate: "Atual",
+    startdate: 2021,
+    enddate: currentDate,
 
     techs: [
       { id: 1, name: "HTML", title: skills[0].title, img: skills[0].img },
@@ -38,3 +41,8 @@ export const work = [
     ],
   },
 ];
+
+
+
+
+

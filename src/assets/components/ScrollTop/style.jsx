@@ -6,7 +6,7 @@ export const Scroll = styled.div`
     bottom: 1rem;
     right: 1rem;
     font-size: 1.2rem;
-    background: aqua;
+    background: var(--color-primary);
     padding: .5rem .7rem;
     border: none;
     border-radius: 5px;

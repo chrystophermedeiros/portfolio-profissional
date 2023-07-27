@@ -5,8 +5,8 @@ export const Container = styled.section`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 60%;
-  margin: 0 20%;
+  width: 100%;
+  
 
   p {
     font-size: 16px;
@@ -37,7 +37,7 @@ export const Container = styled.section`
 export const ContainerItems = styled.div`
   .swiper {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
 
   .swiper-slide {
@@ -45,7 +45,7 @@ export const ContainerItems = styled.div`
     text-align: center;
     font-size: 18px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 
   }
 

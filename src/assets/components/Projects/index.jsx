@@ -26,11 +26,10 @@ export function Projects() {
 
   const breakPoints = [
     { width: 1, itemsToShow: 1 },
-    { width: 400, itemsToShow: 1 },
-    { width: 600, itemsToShow: 2 },
-    { width: 900, itemsToShow: 3 },
-    { width: 1300, itemsToShow: 3 },
-    { width: 1500, itemsToShow: 4 },
+    { width: 600, itemsToShow: 1 },
+    { width: 700, itemsToShow: 2 },
+    { width: 1000, itemsToShow: 3 },
+    { width: 1400, itemsToShow: 4 },
   ];
 
   return (
@@ -72,8 +71,9 @@ export function Projects() {
                   </ButtonContainer>
                   <div className="skills" >
                     {obj.tag.map((tag) =>(
-                      <div key={tag.id}>
+                      <div className="containerTags" key={tag.id}>
                         <img src={tag.img} alt="" />
+                        <p>{tag.name}</p>
                   
                       </div>
                     )) }

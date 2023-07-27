@@ -52,6 +52,7 @@ export const Container = styled.section`
 `;
 
 export const ContainerItems = styled.div`
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -59,8 +60,10 @@ export const ContainerItems = styled.div`
 `;
 
 export const Card = styled.div`
-  height: 500px;
-  width: 500px;
+  display: grid;
+  height: 35vh;
+  width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   border-radius: 20px;
   display: flex;
   flex-direction: column;
@@ -80,35 +83,36 @@ export const Card = styled.div`
     position: absolute;
     z-index: 10;
 
+    .containerTags{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
     img {
       width: 40px;
     }
   }
   @media (max-width: 994px) {
+    
   }
 
   &:hover {
- 
     background: #1a1a1ae1;
     border: 3px solid aqua;
     transition: all 500ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
 
-   .cardImg{
-    transition: opacity 1s ease;
-        opacity: 10%;
+    .cardImg {
+      transition: opacity 1s ease;
+      opacity: 10%;
     }
 
-    
     .skills {
-    transition: opacity 2s ease;
-    opacity: 100;
-  
+      transition: opacity 2s ease;
+      opacity: 100;
+    }
   }
-  }
-   
-
-
- 
 `;
 
 export const ImgCard = styled.div`
