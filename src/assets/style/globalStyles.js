@@ -1,5 +1,5 @@
 import { createGlobalStyle } from "styled-components";
-
+import bgTexture from "../img/bg-texture.png"
 const GlobalStyle = createGlobalStyle`
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700;800&display=swap');
@@ -32,7 +32,7 @@ const GlobalStyle = createGlobalStyle`
 body {
     background: var(--color-bg);
     color: var(--color-white);
-    background-image: url(../src/assets/img/bg-texture.png);
+    background-image: url(${bgTexture});
    
     
     &::-webkit-scrollbar {

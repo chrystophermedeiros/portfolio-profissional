@@ -1,6 +1,6 @@
 import {skills} from './skills'
 import imgFreeLancer from '../img/work/frelancer.svg'
-
+import imgUPA from '../img/work/upa24h.jpg'
 const currentDate = new Date().getFullYear();
 
 export const work = [
@@ -27,7 +27,7 @@ export const work = [
     id: 2,
     institution: "UPA",
     office: "Analista de TI",
-    img: imgFreeLancer,
+    img: imgUPA,
     about:
       "sou especializado em HTML, CSS, JavaScript e frameworks como React. Tenho habilidades comprovadas como freelancer, entregando soluções de alta qualidade para clientes diversos.",
     startdate: 2021,
