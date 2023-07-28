@@ -32,7 +32,7 @@ const GlobalStyle = createGlobalStyle`
 body {
     background: var(--color-bg);
     color: var(--color-white);
-    background-image: url(/src/assets/img/bg-texture.png);
+    background-image: url(../src/assets/img/bg-texture.png);
    
     
     &::-webkit-scrollbar {
