@@ -11,6 +11,7 @@ import { Button } from "../Button";
 import React, { useState } from "react";
 import { FaSistrix } from "react-icons/fa";
 import { FiGithub } from "react-icons/fi";
+import { Titles } from "../Titles";
 
 export function Projects() {
   const [searchTerm, setSearchTerm] = useState("");
@@ -34,7 +35,7 @@ export function Projects() {
 
   return (
     <Container id={"portfolio"}>
-      <h1>Projetos</h1>
+      <Titles>Projetos</Titles>
       <div className="input">
         <input
           type="text"

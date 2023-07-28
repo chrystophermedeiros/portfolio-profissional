@@ -7,6 +7,8 @@ export const Container = styled.section`
   justify-content: center;
   width: 100%;
   
+  
+  
 
   p {
     font-size: 16px;

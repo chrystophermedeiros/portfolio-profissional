@@ -10,7 +10,7 @@ export const work = [
     office: "Desenvolvedor Front-end",
     img: imgFreeLancer,
     about:
-      "sou especializado em HTML, CSS, JavaScript e frameworks como React. Tenho habilidades comprovadas como freelancer, entregando soluções de alta qualidade para clientes diversos.",
+      "Sou especializado em HTML, CSS, JavaScript e frameworks como React. Tenho habilidades comprovadas como freelancer, entregando soluções de alta qualidade, além disso, possuo experiência em desenvolvimento de aplicações web responsivas e interativas, interfaces amigáveis e funcionais que proporcionam uma excelente experiência do usuário.",
     startdate: 2020,
     enddate: currentDate,
 
@@ -29,7 +29,7 @@ export const work = [
     office: "Analista de TI",
     img: imgUPA,
     about:
-      "sou especializado em HTML, CSS, JavaScript e frameworks como React. Tenho habilidades comprovadas como freelancer, entregando soluções de alta qualidade para clientes diversos.",
+      "Conhecimento em: VMware vSphere, Servidor Windows Server 2008 R2, Active Directory, PFSENSE, automação com Python, estrutura de rede, acesso remoto (AnyDesk e TeamViewer), compartilhamento de arquivos, , manutenção de equipamentos  e controle de sistemas  garantindo a eficiência e qualidade da infraestrutura de TI da empresa. ",
     startdate: 2021,
     enddate: currentDate,
 

@@ -65,18 +65,18 @@ export default function VerticalTabs() {
           sx={{ borderRight: 1, borderColor: "divider" }}
         >
           <Tab  label="Trabalho" {...a11yProps(0)} />
-          <Tab  label="Certificados" {...a11yProps(1)} />
-          <Tab  label="Item Three" {...a11yProps(2)} />
+          <Tab  label="Educação" {...a11yProps(1)} />
+          <Tab  label="Certificados" {...a11yProps(2)} />
          
         </Tabs>
         <TabPanel  value={value} index={0}>
           <Work/>
         </TabPanel>
         <TabPanel  value={value} index={1}>
-          <Certificates/>
+          teste
         </TabPanel>
         <TabPanel value={value} index={2}>
-          Item Three
+        <Certificates/>
         </TabPanel>
       </Box>
     </Container>

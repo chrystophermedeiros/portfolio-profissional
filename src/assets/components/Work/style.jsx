@@ -30,9 +30,13 @@ export const Card = styled.div`
  
 
   .about {
+    display: flex;
+    flex-direction: column;
+    
     p {
       line-height: 25px;
       margin-bottom: 20px;
+     
     }
     h2 {
       color: var(--color-primary);
@@ -86,7 +90,8 @@ export const Card = styled.div`
       gap: 10px;
 
       img {
-        width: 40px;
+        width: 50px;
+        border-radius: 50%;
       }
 
       .left {

@@ -24,10 +24,7 @@ export const Container = styled.section`
     background-color: transparent;
   }
 
-  h1 {
-    text-align: center;
-    padding-top: 90px;
-  }
+  
 
   .input {
     width: 80%;

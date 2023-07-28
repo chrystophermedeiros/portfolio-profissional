@@ -1,10 +1,11 @@
 import { Container, ContainerItems, AboutImg, Card } from "./style";
 import I from "../../img/i/sobre.jpeg";
+import { Titles } from "../Titles";
 
 export function About() {
   return (
     <Container id={"sobre"}>
-      <h1>Sobre mim</h1>
+      <Titles>Sobre mim</Titles>
       <ContainerItems>
         <AboutImg src={I} alt="" />
         <Card>
