@@ -1,7 +1,8 @@
 import styled from "styled-components";
-export const Container = styled.main`
+export const Container = styled.section`
   height: 100%;
   width: 100%;
+
 
 `;
 
@@ -9,14 +10,14 @@ export const ContainerItems = styled.div`
   img {
     width: 40px;
   }
-  width: 100%;
-
+ 
   display: grid;
   gap: 20px;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 `;
 
 export const Card = styled.div`
+
   border: 2px solid black;
   gap: 20px;
   border-radius: 20px;
@@ -25,6 +26,8 @@ export const Card = styled.div`
 
   background: var(--color-bg-variant);
   padding: 20px;
+
+ 
 
   .about {
     p {
@@ -36,6 +39,7 @@ export const Card = styled.div`
     }
 
     .techs {
+     
       margin-top: 20px;
       display: flex;
       align-items: center;

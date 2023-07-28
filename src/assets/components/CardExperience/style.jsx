@@ -12,15 +12,19 @@ export const Container = styled.section`
     width: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     flex-grow: 1;
 
     border-radius: 20px;
   }
 
   .MuiTabs-flexContainer {
+
     display: flex;
     flex-direction: grid;
     justify-content: center;
+   
     align-items: center;
     color: white;
 
