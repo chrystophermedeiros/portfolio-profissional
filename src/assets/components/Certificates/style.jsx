@@ -6,9 +6,6 @@ export const Container = styled.section`
   align-items: center;
   justify-content: center;
   width: 100%;
-  
-  
-  
 
   p {
     font-size: 16px;
@@ -42,13 +39,11 @@ export const ContainerItems = styled.div`
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
 
-  .swiper-slide {
 
+  .swiper-slide {
+    margin-bottom: 40px;
     text-align: center;
     font-size: 18px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-
   }
 
   .skills {
@@ -67,15 +62,13 @@ export const ContainerItems = styled.div`
 
 export const Card = styled.div`
   background-color: var(--color-bg-variant);
-
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   border-radius: 30px;
   img {
-    height: 70%;
-    width: 70%;
+    width: 100%;
     border-radius: 30px;
     margin: 0;
     padding: 20px;
