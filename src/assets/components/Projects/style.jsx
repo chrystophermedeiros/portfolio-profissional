@@ -78,7 +78,7 @@ export const Card = styled.div`
     justify-content: space-around;
     gap: 10%;
     position: absolute;
-    z-index: 10;
+    z-index: 2;
 
     .containerTags{
       display: flex;
