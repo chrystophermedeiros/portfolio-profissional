@@ -1,5 +1,8 @@
 import { useState } from 'react';
-
+import {Container} from "./style"
+import { Titles } from '../Titles';
+import {MdOutlineMail} from 'react-icons/md'
+import {BsWhatsapp} from 'react-icons/bs'
 
 export function Contact() {
   const [name, setName] = useState('')
@@ -7,10 +10,27 @@ export function Contact() {
   const [message, setMessage] = useState('')
 
   return (
-    <div className="container">
-      <h1 className="title">Contato</h1>
+    <Container id='contato' className="container">
+      <Titles >Contato</Titles>
 
-      <form className="form" onSubmit={() => {}}>
+      <article className="contact_option">
+            <MdOutlineMail className='contact_option-icon'/>
+            <h4>Email</h4>
+            <h5> chrystopher312
+              @gmail.com</h5>
+            <a href="mailto:chrystopher312@gmail.com" target="_blank" rel="noreferrer">Enviar mensagem</a>
+          </article>
+
+        
+
+          <article className="contact_option">
+            <BsWhatsapp className='contact_option-icon'/>
+            <h4>WhatsApp</h4>
+            <h5>+55 (88) 9 9806-1512</h5>
+            <a href="https://api.whatsapp.com/send?phone=+998061512" target="_blank" rel="noreferrer">Enviar mensagem</a>
+          </article>
+
+      {/* <form className="form" onSubmit={() => {}}>
         <input 
           className="input"
           type="text"
@@ -35,8 +55,8 @@ export function Contact() {
         />
 
         <input className="button" type="submit" value="Enviar" />
-      </form>
+      </form> */}
 
-    </div>
+    </Container>
   );
 }

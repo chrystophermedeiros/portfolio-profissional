@@ -61,28 +61,28 @@ export function Header({handleDarkModeToggle, icon}) {
             </a>
           </li>
 
-          <li>
+          <li> 
+            <a href="#habilidades">
+              <span>Habilidades</span>
+            </a>
+          </li>
+
+          <li> 
             <a href="#experience">
               <span>Experiência</span>
             </a>
           </li>
 
           <li>
-            <a href="#portfolio">
+            <a href="#projetos">
               <span>Projetos</span>
             </a>
           </li>
 
           <li>
-            <Link to="/resume">
-              <span>Resume</span>
-            </Link>
-          </li>
-
-          <li>
-            <Link to="/contact">
+            <a href="#contato">
               <span>Contato</span>
-            </Link>
+            </a>
           </li>
           <li>
             <a ><span onClick={handleDarkModeToggle} >{icon}</span></a>

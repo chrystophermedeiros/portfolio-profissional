@@ -3,7 +3,7 @@ import { Titles } from "../Titles";
 import { Container, ContainerItems, Card } from "./style";
 export function Skills() {
   return (
-    <Container>
+    <Container id="habilidades">
         <Titles>Habilidades</Titles>
       <ContainerItems>
           {skills && skills.map((obj) => (

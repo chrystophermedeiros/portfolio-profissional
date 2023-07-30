@@ -32,7 +32,7 @@ export function Certificates() {
 
   return (
     <Container >
-      <Box className="containerItens" sx={{ maxWidth: 500, minWidth: 300, flexGrow: 1 }}>
+      <Box className="containerItens" sx={{ maxWidth: 600, minWidth: 300, flexGrow: 1 }}>
         <Paper
           className="header"
           square
@@ -57,12 +57,13 @@ export function Certificates() {
             <div key={step.name}>
               {Math.abs(activeStep - index) <= 2 ? (
                 <Box
+                className="box"
                   component="img"
                   sx={{
                     height: 300,
                     minHeight:200,
                     display: "block",
-                    maxWidth: 500,
+                    maxWidth: 600,
                     overflow: "hidden",
                     width: "100%",
                   }}

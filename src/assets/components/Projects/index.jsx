@@ -34,7 +34,7 @@ export function Projects() {
   ];
 
   return (
-    <Container id={"portfolio"}>
+    <Container id={"projetos"}>
       <Titles>Projetos</Titles>
       <div className="input">
         <input

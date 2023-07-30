@@ -6,14 +6,12 @@ export const Container = styled.section`
   margin: 0 5%;
 
   h1 {
-        text-align: center;
-        padding-top: 90px;
-    }
-
+    text-align: center;
+    padding-top: 90px;
+  }
 `;
 
 export const ContainerItems = styled.div`
-
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 `;
@@ -23,7 +21,7 @@ export const Card = styled.div`
   background-color: var(--color-bg-variant);
   padding: 20px;
   margin: 5px;
-  border:2px solid ${(props) => props.isBorder};
+  border: 2px solid ${(props) => props.isBorder};
   border-radius: 20px;
   display: flex;
   flex-direction: column;
@@ -31,10 +29,9 @@ export const Card = styled.div`
   justify-content: center;
   gap: 10px;
 
-  img{
+  img {
     height: 80%;
     padding: 20px;
-   
   }
   @media (max-width: 994px) {
   }

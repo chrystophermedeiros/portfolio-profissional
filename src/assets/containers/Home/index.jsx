@@ -28,7 +28,7 @@ export function Home() {
         <Experience/>
         <Projects/>
         <ScrollTop />
-       {/* <Contact/> */}
+       <Contact/>
       </ContainerItems>
       <Footer/>
     </Container>
