@@ -12,7 +12,9 @@
   "dependencies": {
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
-    "@mui/material": "^5.14.1",
+    "@mui/icons-material": "^5.14.1",
+    "@mui/lab": "^5.0.0-alpha.137",
+    "@mui/material": "^5.14.2",
     "@mui/styled-engine-sc": "^5.12.0",
     "i": "^0.3.7",
     "phosphor": "^0.7.1",
@@ -22,6 +24,9 @@
     "react-elastic-carousel": "^0.11.5",
     "react-icons": "^4.10.1",
     "react-router-dom": "^6.14.1",
+    "react-swipeable": "^7.0.1",
+    "react-swipeable-views": "^0.14.0",
+    "react-swipeable-views-utils": "^0.14.0",
     "styled-components": "^6.0.5",
     "swiper": "^10.0.4",
     "uuid": "^9.0.0"

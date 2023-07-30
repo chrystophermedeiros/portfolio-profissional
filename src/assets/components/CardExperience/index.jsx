@@ -6,7 +6,8 @@ import Box from "@mui/material/Box";
 import { Container } from "./style";
 import * as React from 'react';
 import { Work } from "../Work";
-import { Certificates } from "../Certificates";
+import {Certificates} from "../Certificates";
+import { Education } from "../Education";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -58,8 +59,8 @@ export default function VerticalTabs() {
         <Tabs 
           value={value}
           onChange={handleChange}
-          // variant="scrollable"
-          // scrollButtons="auto"
+          variant="scrollable"
+          scrollButtons="auto"
           textColor=""
           aria-label="Vertical tabs example"
           sx={{ borderRight: 1, borderColor: "divider" }}
@@ -73,7 +74,7 @@ export default function VerticalTabs() {
           <Work/>
         </TabPanel>
         <TabPanel  value={value} index={1}>
-          teste
+          <Education/>
         </TabPanel>
         <TabPanel value={value} index={2}>
         <Certificates/>

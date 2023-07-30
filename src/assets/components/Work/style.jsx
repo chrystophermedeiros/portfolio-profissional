@@ -32,17 +32,22 @@ export const Card = styled.div`
   .about {
     display: flex;
     flex-direction: column;
-    
+    justify-content: space-between;
+    height: 100%;
     p {
       line-height: 25px;
       margin-bottom: 20px;
+      height: 60%;
      
     }
     h2 {
       color: var(--color-primary);
+     
     }
 
     .techs {
+      
+      
      
       margin-top: 20px;
       display: flex;
@@ -54,6 +59,7 @@ export const Card = styled.div`
       }
 
       .containerTechs {
+       
         display: flex;
         flex-direction: column;
         justify-content: center;

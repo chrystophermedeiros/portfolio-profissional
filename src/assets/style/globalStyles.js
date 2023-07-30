@@ -43,7 +43,7 @@ body {
   }
 
   &::-webkit-scrollbar-thumb {
-    background-color: #8052EC;
+    background-color:var(--color-primary) ;
     border-radius: 4px;
     /* Ajuste o tamanho da rolagem interna aqui */
     width: 6px; /* Largura da rolagem interna */
