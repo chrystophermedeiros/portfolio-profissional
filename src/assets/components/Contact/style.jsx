@@ -8,14 +8,15 @@ export const Container = styled.section`
 
 export const ContainerItems = styled.div`
 width: 100%;
+height: 100%;
 a{
   text-decoration: none;
 }
   .container.contact_container {
-    width: 58%;
+    width: 68%;
     display: grid;
-    grid-template-columns: 30% 58%;
-    gap: 12%;
+    grid-template-columns: 40% 58%;
+    gap: 8%;
   }
 
   .contact_options {
@@ -29,6 +30,7 @@ a{
     padding: 1.2rem;
     border-radius: 1.2rem;
     text-align: center;
+ 
     border: 1px solid transparent;
     transition: var(--transition);
   }
@@ -40,7 +42,7 @@ a{
 
   .contact_option-icon {
     font-size: 1.5rem;
-    margin-bottom: 0.5rem;
+  
   }
 
   .contact_option a {
@@ -62,7 +64,7 @@ a{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    gap: 2px;
     background-color: var(--color-bg-variant);
    a{
     text-decoration: none;

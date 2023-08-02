@@ -23,7 +23,7 @@ export function Contact() {
   };
 
   return (
-    <Container>
+    <Container id="contato">
       <Titles>Contato</Titles>
       <ContainerItems id="contato">
         <div className="container contact_container">

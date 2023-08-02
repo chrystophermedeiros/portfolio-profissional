@@ -14,7 +14,7 @@ export const Container = styled.header`
   background: var(--color-bg);
 
   a {
-    color: aqua;
+    color: var(--color-primary);
   }
 
   @media (min-width: 995px) {
@@ -111,7 +111,7 @@ export const NavMenu = styled.div`
           content: "";
           height: 2px;
           width: auto;
-          background-color: #091ce7;
+          background-color: var(--color-primary-variant);
           border-radius: 0px 0px 4px 4px;
           position: absolute;
           bottom: -6px;
@@ -126,7 +126,7 @@ export const NavMenu = styled.div`
       }
 
       &:hover {
-        color: #00eaff;
+        color: var(--color-primary);
         span:before {
           transform: scaleX(1);
           visibility: visible;

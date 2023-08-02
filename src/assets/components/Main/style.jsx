@@ -26,6 +26,11 @@ export const ContainerItems = styled.div`
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+
+    @media (max-width: 700px) {
+      font-size: 22px;
+    }
+    
   }
 
   .cv {

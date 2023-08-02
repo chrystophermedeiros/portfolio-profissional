@@ -5,6 +5,11 @@ export const Container = styled.section`
   width: 90%;
   margin: 0 5%;
 
+
+.VBJOW{
+  background-color:var( --color-primary);
+  box-shadow: none;
+}
   .rec.rec-arrow {
     background-color:var( --color-primary);
     color: #ffffff;
@@ -46,6 +51,11 @@ export const Container = styled.section`
       font-size: 20px;
       color: var( --color-primary);
       width: 100%;
+
+      @media (max-width: 994px) {
+        font-size: 16px;
+    
+  }
     }
   }
 `;
@@ -93,14 +103,13 @@ export const Card = styled.div`
       width: 40px;
     }
   }
-  @media (max-width: 994px) {
-    
-  }
+  
 
   &:hover {
     background: #1a1a1ae1;
     border: 3px solid aqua;
     transition: all 500ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
+
 
     .cardImg {
       transition: opacity 1s ease;

@@ -39,7 +39,7 @@ export function Projects() {
       <div className="input">
         <input
           type="text"
-          placeholder="Procure um projeto ou skills"
+          placeholder="Projeto ou tecnologia"
           value={searchTerm}
           onChange={handleSearch}
         />{" "}
