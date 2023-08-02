@@ -10,12 +10,14 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@emailjs/browser": "^3.11.0",
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
     "@mui/icons-material": "^5.14.1",
     "@mui/lab": "^5.0.0-alpha.137",
     "@mui/material": "^5.14.2",
     "@mui/styled-engine-sc": "^5.12.0",
+    "emailjs": "^4.0.2",
     "i": "^0.3.7",
     "phosphor": "^0.7.1",
     "phosphor-react": "^1.4.1",

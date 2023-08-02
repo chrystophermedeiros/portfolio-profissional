@@ -1,6 +1,6 @@
 import {skills} from './skills'
 import imgFreeLancer from '../img/work/frelancer.svg'
-import imgUPA from '../img/work/upa24h.jpg'
+import imgUPA from '../img/work/upa24h.svg'
 const currentDate = new Date().getFullYear();
 
 export const work = [

@@ -4,6 +4,7 @@ export const FooterContainer = styled.footer`
   margin-top: 5rem;
   border-top: 1px solid aqua;
   padding: 1.4rem 0;
+  background-color: var(--color-bg);
 
   display: flex;
   flex-direction: column;

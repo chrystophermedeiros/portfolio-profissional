@@ -4,24 +4,52 @@ export const Container = styled.section`
   height: 100%;
   width: 90%;
   margin: 0 5%;
-
-  h1 {
-    text-align: center;
-    padding-top: 90px;
-  }
 `;
 
 export const ContainerItems = styled.div`
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-`;
+width: 100%;
+a{
+  text-decoration: none;
+}
+  .container.contact_container {
+    width: 58%;
+    display: grid;
+    grid-template-columns: 30% 58%;
+    gap: 12%;
+  }
 
-export const Card = styled.div`
-  height: 200px;
-  background-color: var(--color-bg-variant);
-  padding: 20px;
-  margin: 5px;
-  border: 2px solid ${(props) => props.isBorder};
+  .contact_options {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+
+  .contact_option {
+    background: var(--color-bg-variant);
+    padding: 1.2rem;
+    border-radius: 1.2rem;
+    text-align: center;
+    border: 1px solid transparent;
+    transition: var(--transition);
+  }
+
+  .contact_option:hover {
+    background: transparent;
+    border-color: var(--color-primary-variant);
+  }
+
+  .contact_option-icon {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .contact_option a {
+    margin-top: 0.7rem;
+    display: inline-block;
+    font-size: 0.8rem;
+  }
+
+  border: 2px solid transparent;
   border-radius: 20px;
   display: flex;
   flex-direction: column;
@@ -29,15 +57,60 @@ export const Card = styled.div`
   justify-content: center;
   gap: 10px;
 
-  img {
-    height: 80%;
-    padding: 20px;
-  }
-  @media (max-width: 994px) {
+  article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: var(--color-bg-variant);
+   a{
+    text-decoration: none;
+    list-style: none;
+    color: aqua;
+
+    &:hover{
+      opacity: 0.6;
+    }
+   }
+
   }
 
-  &:hover {
-    background-color: transparent;
-    transition: all 400ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
+
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+
+  input,
+  textarea {
+    width: 100%;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    background: transparent;
+    border: 2px solid var(--color-primary-variant);
+    resize: none;
+    color: var(--color-white);
+  }
+
+  /* ===================== ESTILOS PARA TABLETS ===================== */
+
+  @media screen and (max-width: 1024px) {
+    .container.contact_container {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+      
+    }
+  }
+
+  /* ===================== ESTILOS PARA CELULARES ===================== */
+
+  @media screen and (max-width: 600px) {
+    .container.contact_container {
+
+      width: 90%;
+    }
   }
 `;

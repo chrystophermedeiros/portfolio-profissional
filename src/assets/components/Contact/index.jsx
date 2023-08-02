@@ -1,62 +1,78 @@
-import { useState } from 'react';
-import {Container} from "./style"
-import { Titles } from '../Titles';
-import {MdOutlineMail} from 'react-icons/md'
-import {BsWhatsapp} from 'react-icons/bs'
+import { Container, ContainerItems } from "./style";
+import { Titles } from "../Titles";
+import { MdOutlineMail } from "react-icons/md";
+import { BsWhatsapp } from "react-icons/bs";
+import { useState, useRef } from "react";
+import { Button } from "../Button";
+
+import emailjs from "@emailjs/browser";
 
 export function Contact() {
-  const [name, setName] = useState('')
-  const [email, setEmail] = useState('')
-  const [message, setMessage] = useState('')
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm(
+      "service_s6kopor",
+      "template_yhl8i7s",
+      form.current,
+      "dHGKmR6mVFE-BTtqm"
+    );
+    e.target.reset();
+  };
 
   return (
-    <Container id='contato' className="container">
-      <Titles >Contato</Titles>
+    <Container>
+      <Titles>Contato</Titles>
+      <ContainerItems id="contato">
+        <div className="container contact_container">
+          <div className="contact_options">
+            <article className="contact_option">
+              <MdOutlineMail className="contact_option-icon" />
+              <h4>Email</h4>
+              <h5> chrystopher312 @gmail.com</h5>
+              <a
+                href="mailto:chrystopher312@gmail.com"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Enviar mensagem
+              </a>
+            </article>
 
-      <article className="contact_option">
-            <MdOutlineMail className='contact_option-icon'/>
-            <h4>Email</h4>
-            <h5> chrystopher312
-              @gmail.com</h5>
-            <a href="mailto:chrystopher312@gmail.com" target="_blank" rel="noreferrer">Enviar mensagem</a>
-          </article>
+            <article className="contact_option">
+              <BsWhatsapp className="contact_option-icon" />
+              <h4>WhatsApp</h4>
+              <h5>+55 (88) 9 9806-1512</h5>
+              <a
+                href="https://api.whatsapp.com/send?phone=+998061512"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Enviar mensagem
+              </a>
+            </article>
+          </div>
+          {/*Fim de opção de contato*/}
+          <form ref={form} onSubmit={sendEmail}>
+            <input type="text" name="name" placeholder="Seu Nome" required />
 
-        
+            <input type="email" name="email" placeholder="Seu Email" required />
 
-          <article className="contact_option">
-            <BsWhatsapp className='contact_option-icon'/>
-            <h4>WhatsApp</h4>
-            <h5>+55 (88) 9 9806-1512</h5>
-            <a href="https://api.whatsapp.com/send?phone=+998061512" target="_blank" rel="noreferrer">Enviar mensagem</a>
-          </article>
+            <textarea
+              name="message"
+              rows="7"
+              placeholder="Sua Mensagem"
+              required
+            ></textarea>
 
-      {/* <form className="form" onSubmit={() => {}}>
-        <input 
-          className="input"
-          type="text"
-          placeholder="Digite seu nome"
-          onChange={(e) => setName(e.target.value)}
-          value={name}
-        />
-        
-        <input 
-          className="input"
-          type="email"
-          placeholder="Digite seu email"
-          onChange={(e) => setEmail(e.target.value)}
-          value={email}
-        />
-
-        <textarea 
-          className="textarea"
-          placeholder="Digite sua mensagem..."
-          onChange={(e) => setMessage(e.target.value)}
-          value={message}
-        />
-
-        <input className="button" type="submit" value="Enviar" />
-      </form> */}
-
+            <Button btn1 type="submit" className="btn btn-primary">
+              Enviar Mensagem
+            </Button>
+          </form>
+        </div>
+      </ContainerItems>
     </Container>
   );
 }

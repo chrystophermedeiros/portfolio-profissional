@@ -27,6 +27,8 @@ const GlobalStyle = createGlobalStyle`
     --color-white: #fff;
     --color-ligth: rgb(255, 255, 255, 0.6);
     --transition: all 400ms ease;
+  
+ 
 }
 
 body {

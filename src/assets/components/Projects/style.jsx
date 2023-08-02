@@ -6,7 +6,7 @@ export const Container = styled.section`
   margin: 0 5%;
 
   .rec.rec-arrow {
-    background-color: #9758a6;
+    background-color:var( --color-primary);
     color: #ffffff;
     border-radius: 50px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
@@ -14,10 +14,12 @@ export const Container = styled.section`
       display: none;
     }
   }
+
+
   .rec.rec-arrow:hover {
-    border: 2px solid #9758a6;
+    border: 2px solid var( --color-primary);
     background-color: #efefef;
-    color: #9758a6;
+    color: var( --color-primary);
   }
   .rec.rec-arrow:disabled {
     border: none;
@@ -42,7 +44,7 @@ export const Container = styled.section`
     input {
       background: transparent;
       font-size: 20px;
-      color: aqua;
+      color: var( --color-primary);
       width: 100%;
     }
   }

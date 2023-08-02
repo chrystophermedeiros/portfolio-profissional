@@ -10,15 +10,17 @@ import { Button } from "../Button";
 import { FiGithub, FiLinkedin } from "react-icons/fi";
 import { AiOutlineDownload } from "react-icons/ai";
 import CV from "../../img/cv/cv.pdf";
+import { ArrowDown } from "phosphor-react";
+import { Scroll } from "./style";
 
 export function Main() {
   return (
     <Container>
       <ContainerItems>
         <Card>
-          <h1>Seja bem vindo, </h1>
-          <h2>Chrystopher Medeiros</h2>
-          <h3>Desenvolvedor Front - End</h3>
+          <h2>Olá, meu nome é, </h2>
+          <h1>Chrystopher Medeiros</h1>
+          <h2>Desenvolvedor Front - End</h2>
           <ContainerButton>
             <a
               target="_blank"
@@ -34,11 +36,21 @@ export function Main() {
               </Button>
             </a>
           </ContainerButton>
-          <a className="cv" target="_blank" href={CV}>
-            <Button btn1>
-              Download CV <AiOutlineDownload className="icon" />
-            </Button>
-          </a>
+          <div className="cvContact">
+            <a className="cv" target="_blank" href={CV}>
+              <Button btn1>
+                Download CV <AiOutlineDownload className="icon" />
+              </Button>
+            </a>
+            <Scroll>
+              <a href="#contato">
+                <span className="contato">
+                  Contato <ArrowDown weight="bold"  />
+                </span>
+              </a>
+            </Scroll>
+          </div>
+         
         </Card>
         <MyImg src={I} alt="" />
       </ContainerItems>

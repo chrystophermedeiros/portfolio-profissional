@@ -16,10 +16,34 @@ export const ContainerItems = styled.div`
   padding: 30px;
   gap: 5px;
 
+  h1 {
+    color: var(--color-white);
+    background: linear-gradient(
+      80deg,
+      var(--color-primary-variant),
+      var(--color-primary)
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
   .cv {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  .cvContact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .border{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
   }
 
   @media (max-width: 994px) {
@@ -70,6 +94,26 @@ export const ContainerButton = styled.div`
       .icon {
         font-size: 25px;
       }
+    }
+  }
+`;
+
+export const Scroll = styled.div`
+margin-top: 10px;
+
+
+  .contato{
+    margin-top: 20px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: white;
+    border: none;
+
+    cursor: pointer;
+
+  
+    &:hover {
+      opacity: 0.6;
     }
   }
 `;
