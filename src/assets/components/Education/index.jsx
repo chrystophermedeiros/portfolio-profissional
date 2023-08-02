@@ -25,7 +25,7 @@ export function Education() {
             variant="body2"
             color="text.secondary"
           >
-            <Typography>
+            <Typography color={"var(--color-primary)"}>
               <p  >{obj.institution}</p>
             </Typography>
           </TimelineOppositeContent>
