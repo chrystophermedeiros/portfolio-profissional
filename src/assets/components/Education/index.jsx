@@ -35,7 +35,7 @@ export function Education() {
                 </TimelineSeparator>
                 <TimelineContent sx={{ py: "20px", px: 2 }}>
                   <Typography variant="h6" component="span">
-                    <h5>{obj.course}</h5>
+                    <h6>{obj.course}</h6>
                   </Typography>
                   <Typography>{obj.level}</Typography>
                   <Typography>{obj.status}</Typography>

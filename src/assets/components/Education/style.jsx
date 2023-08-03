@@ -16,7 +16,7 @@ export const ContainerItems = styled.div`
   padding: 0;
   margin: 0 -10%;
 
-  h5 {
+  h6 {
     color: var(--color-primary-variant);
   }
 

@@ -112,7 +112,7 @@ a{
   @media screen and (max-width: 600px) {
     .container.contact_container {
 
-      width: 90%;
+      width: 100%;
     }
   }
 `;

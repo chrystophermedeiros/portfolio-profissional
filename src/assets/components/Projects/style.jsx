@@ -4,6 +4,10 @@ export const Container = styled.section`
   height: 100%;
   width: 90%;
   margin: 0 5%;
+  @media (max-width: 994px) {
+        width: 98vw;
+        margin: 0;
+      }
 
   .VBJOW {
     background-color: var(--color-primary);
