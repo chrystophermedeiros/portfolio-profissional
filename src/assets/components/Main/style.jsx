@@ -13,7 +13,7 @@ export const ContainerItems = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 30px;
+  padding-top: 30px;
   gap: 5px;
 
   h1 {

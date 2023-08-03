@@ -5,13 +5,12 @@ export const Container = styled.section`
   width: 90%;
   margin: 0 5%;
 
-
-.VBJOW{
-  background-color:var( --color-primary);
-  box-shadow: none;
-}
+  .VBJOW {
+    background-color: var(--color-primary);
+    box-shadow: none;
+  }
   .rec.rec-arrow {
-    background-color:var( --color-primary);
+    background-color: var(--color-primary);
     color: #ffffff;
     border-radius: 50px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
@@ -20,18 +19,15 @@ export const Container = styled.section`
     }
   }
 
-
   .rec.rec-arrow:hover {
-    border: 2px solid var( --color-primary);
+    border: 2px solid var(--color-primary);
     background-color: #efefef;
-    color: var( --color-primary);
+    color: var(--color-primary);
   }
   .rec.rec-arrow:disabled {
     border: none;
     background-color: transparent;
   }
-
-  
 
   .input {
     width: 80%;
@@ -49,19 +45,17 @@ export const Container = styled.section`
     input {
       background: transparent;
       font-size: 20px;
-      color: var( --color-primary);
+      color: var(--color-primary);
       width: 100%;
 
       @media (max-width: 994px) {
         font-size: 16px;
-    
-  }
+      }
     }
   }
 `;
 
 export const ContainerItems = styled.div`
-
   display: flex;
   align-items: center;
   justify-content: center;
@@ -70,9 +64,9 @@ export const ContainerItems = styled.div`
 
 export const Card = styled.div`
   display: grid;
- 
+
   width: 100%;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   border-radius: 20px;
   display: flex;
   flex-direction: column;
@@ -92,7 +86,7 @@ export const Card = styled.div`
     position: absolute;
     z-index: 2;
 
-    .containerTags{
+    .containerTags {
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -103,13 +97,11 @@ export const Card = styled.div`
       width: 40px;
     }
   }
-  
 
   &:hover {
     background: #1a1a1ae1;
     border: 3px solid aqua;
     transition: all 500ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
-
 
     .cardImg {
       transition: opacity 1s ease;
@@ -130,7 +122,6 @@ export const ImgCard = styled.img`
 
   border-radius: 10px;
   margin-bottom: 20px;
-
 `;
 
 export const ButtonContainer = styled.div`

@@ -8,7 +8,7 @@ export const Container = styled.section`
   width: 100%;
 
   .css-19kzrtu {
-    padding: 10px;
+    padding: 10px 0;
 
   }
  
