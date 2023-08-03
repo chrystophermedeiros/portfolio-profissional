@@ -4,29 +4,28 @@ export const Container = styled.section`
   height: 100%;
   width: 90%;
   margin: 0 5%;
- 
 `;
 
 export const ContainerItems = styled.div`
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
- 
-  h5{
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  border-radius: 20px;
+  display: grid;
+
+  padding: 0;
+  margin: 0 -10%;
+
+  h5 {
     color: var(--color-primary-variant);
-    
   }
 
-  .teste{
+
+
+  .MuiTimelineConnector-root {
     display: flex;
     align-items: center;
     justify-content: center;
-     margin: 0;
-  padding: 0;
+    background-color: var(--color-primary-variant);;
   }
-
-
 `;
-
