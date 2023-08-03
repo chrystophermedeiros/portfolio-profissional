@@ -2,9 +2,14 @@ import styled from "styled-components";
 export const Container = styled.section`
   height: 100%;
   width: 100%;
+  
+
+ 
+
 `;
 
 export const ContainerItems = styled.div`
+
   img {
     width: 40px;
   }
@@ -22,7 +27,7 @@ export const Card = styled.div`
   flex-direction: column;
 
   background: var(--color-bg-variant);
-  padding: 20px;
+  padding: 10px;
 
   .about {
     display: flex;

@@ -7,6 +7,9 @@ export const Container = styled.section`
   height: 100%;
   width: 100%;
 
+  .css-19kzrtu {
+    padding: 12px;
+  }
   .box {
     height: 100%;
     width: 100%;

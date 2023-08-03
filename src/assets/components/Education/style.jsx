@@ -13,10 +13,18 @@ export const ContainerItems = styled.div`
   align-items: center;
   justify-content: center;
   width: 100%;
-
+ 
   h5{
     color: var(--color-primary-variant);
     
+  }
+
+  .teste{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     margin: 0;
+  padding: 0;
   }
 
 

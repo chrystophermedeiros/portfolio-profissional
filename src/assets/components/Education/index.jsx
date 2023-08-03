@@ -14,11 +14,11 @@ export function Education() {
   {education.map((obj) =>(
     <Container>
       <ContainerItems>
-        <Timeline position="alternate">
+        <Timeline className="teste" position="alternate">
           <TimelineItem>
             <TimelineOppositeContent
               sx={{ m: "auto 0" }}
-              align="right"
+              align="center"
               variant="body2"
               color="text.secondary"
             >
