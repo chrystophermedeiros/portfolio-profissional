@@ -16,12 +16,6 @@ export const ContainerItems = styled.div`
   padding: 0;
   margin: 0 -10%;
 
-  h6 {
-    color: var(--color-primary-variant);
-  }
-
-
-
   .MuiTimelineConnector-root {
     display: flex;
     align-items: center;

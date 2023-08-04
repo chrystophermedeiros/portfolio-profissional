@@ -9,7 +9,7 @@ export const Container = styled.section`
         margin: 0;
       }
 
-  .VBJOW {
+  .rec-dot_active{
     background-color: var(--color-primary);
     box-shadow: none;
   }

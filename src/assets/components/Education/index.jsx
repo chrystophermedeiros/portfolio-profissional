@@ -33,9 +33,9 @@ export function Education() {
                   </TimelineDot>
                   <TimelineConnector />
                 </TimelineSeparator>
-                <TimelineContent sx={{ py: "20px", px: 2 }}>
-                  <Typography variant="h6" component="span">
-                    <h6>{obj.course}</h6>
+                <TimelineContent sx={{ py: "20px", px: 6 }}>
+                  <Typography color={"var(--color-primary-variant)"} >
+                    {obj.course}
                   </Typography>
                   <Typography>{obj.level}</Typography>
                   <Typography>{obj.status}</Typography>
