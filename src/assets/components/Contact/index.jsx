@@ -4,24 +4,39 @@ import { MdOutlineMail } from "react-icons/md";
 import { BsWhatsapp } from "react-icons/bs";
 import { useState, useRef } from "react";
 import { Button } from "../Button";
+import Alert from "@mui/material/Alert";
+import Stack from "@mui/material/Stack";
 
 import emailjs from "@emailjs/browser";
 
 export function Contact() {
   const form = useRef();
+  const [emailSent, setEmailSent] = useState(false);
+  const [isError, setIsError] = useState(false);
 
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm(
-      "service_7x3o3ir",
-      "template_yhl8i7s",
-      form.current,
-      "rWd3F_fyG4Noze9FY"
-    );
+    emailjs
+      .sendForm(
+        "service_7x3o3ir",
+        "template_yhl8i7s",
+        form.current,
+        "rWd3F_fyG4Noze9FY"
+      )
+      .then(
+        (result) => {
+          setEmailSent(true);
+          setIsError(false);
+        },
+        (error) => {
+          setIsError(true);
+          setEmailSent(false);
+        }
+      );
+
     e.target.reset();
   };
-
   return (
     <Container id="contato">
       <Titles>Contato</Titles>
@@ -53,9 +68,11 @@ export function Contact() {
                 Enviar mensagem
               </a>
             </article>
+            {/* ... */}
           </div>
           {/*Fim de opção de contato*/}
           <form ref={form} onSubmit={sendEmail}>
+            {/* ... */}
             <input type="text" name="name" placeholder="Seu Nome" required />
 
             <input type="email" name="email" placeholder="Seu Email" required />
@@ -70,6 +87,16 @@ export function Contact() {
             <Button btn1 type="submit" className="btn btn-primary">
               Enviar Mensagem
             </Button>
+            {emailSent && (
+              <Stack sx={{ width: "100%" }} spacing={2}>
+                <Alert severity="success">Enviado com sucesso</Alert>
+              </Stack>
+            )}
+            {isError && (
+              <Stack sx={{ width: "100%" }} spacing={2}>
+                <Alert severity="error">Erro ao enviar a mensagem</Alert>
+              </Stack>
+            )}
           </form>
         </div>
       </ContainerItems>
