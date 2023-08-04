@@ -33,7 +33,7 @@ export function Education() {
                   </TimelineDot>
                   <TimelineConnector />
                 </TimelineSeparator>
-                <TimelineContent sx={{ py: "20px", px: 1 }}>
+                <TimelineContent sx={{ py: "20px", px: 4 }}>
                   <Typography color={"var(--color-primary-variant)"} >
                     {obj.course}
                   </Typography>

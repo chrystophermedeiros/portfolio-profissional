@@ -11,7 +11,7 @@ export const ContainerItems = styled.div`
   display: grid;
 
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  border-radius: 20px;
+ 
 
   display: grid;
   align-items: center;
