@@ -14,10 +14,10 @@ export function Contact() {
     e.preventDefault();
 
     emailjs.sendForm(
-      "service_s6kopor",
+      "service_7x3o3ir",
       "template_yhl8i7s",
       form.current,
-      "dHGKmR6mVFE-BTtqm"
+      "rWd3F_fyG4Noze9FY"
     );
     e.target.reset();
   };

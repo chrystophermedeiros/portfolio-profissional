@@ -4,6 +4,7 @@ export const Container = styled.section`
   height: 100%;
   width: 90%;
   margin: 0 5%;
+ 
 `;
 
 export const ContainerItems = styled.div`
@@ -11,15 +12,22 @@ export const ContainerItems = styled.div`
 
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   border-radius: 20px;
+
   display: grid;
+  align-items: center;
+  justify-content: center;
 
   padding: 0;
   margin: 0 -10%;
+  .MuiTimeline-root{
 
-  .MuiTimelineConnector-root {
+    padding: 0;
+ 
     display: flex;
     align-items: center;
-    justify-content: center;
-    background-color: var(--color-primary-variant);;
+  justify-content: center;
+  
   }
+
+
 `;

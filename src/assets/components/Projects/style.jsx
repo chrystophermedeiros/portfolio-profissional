@@ -5,8 +5,10 @@ export const Container = styled.section`
   width: 90%;
   margin: 0 5%;
   @media (max-width: 994px) {
-        width: 98vw;
+        width: 100%;
         margin: 0;
+      
+    
       }
 
   .rec-dot_active{
