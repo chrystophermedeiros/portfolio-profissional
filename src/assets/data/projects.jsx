@@ -1,5 +1,5 @@
 import { v1 as uuidv1 } from "uuid";
-import imgCodeBurguer from "../img/projects/projeto-code-burger.jpg"
+import imgCodeBurguer from "../img/projects/projeto-code-burger.jpg";
 import imgAndroid from "../img/projects/projeto-android.jpg";
 import imgCordel from "../img/projects/projeto-cordel.png";
 import imgMovies from "../img/projects/projeto-movies.png";
@@ -9,7 +9,6 @@ import imgTarefas from "../img/projects/projeto-tarefas.png";
 import skills from "./skills";
 
 export const projects = [
-
   {
     id: uuidv1(),
     img: imgCodeBurguer,
@@ -23,33 +22,6 @@ export const projects = [
       { id: 2, name: "CSS", title: skills[1].title, img: skills[1].img },
       { id: 3, name: "JavaScript", title: skills[2].title, img: skills[2].img },
       { id: 4, name: "React", title: skills[3].title, img: skills[3].img },
-    ],
-  },
-  {
-    id: uuidv1(),
-    img: imgAndroid,
-    name: "Curiosidades Tecnologicas",
-    about:
-      "Curiosidades de Tecnologia é um site que reúne informações interessantes sobre o mundo Tech, com foco no sistema operacional Android. Nele, você encontrará notícias, artigos e curiosidades sobre o icônico mascote do Android, desde sua origem até sua evolução para o Bugdroid. Além disso, o site compartilha curiosidades sobre as versões do Android, que são nomeadas em ordem alfabética em homenagem a doces. O site foi criado por Chrystopher Medeiros para o CursoemVideo e é um ótimo lugar para aprender mais sobre o sistema Android e suas curiosidades.",
-    path: "https://chrystophermedeiros.github.io/projeto-android/",
-    github: "https://github.com/chrystophermedeiros/projeto-android",
-    tag: [
-      { id: 1, name: "HTML", title: skills[0].title, img: skills[0].img },
-      { id: 2, name: "CSS", title: skills[1].title, img: skills[1].img },
-    ],
-  },
-
-  {
-    id: uuidv1(),
-    img: imgCordel,
-    name: "Cordel Moderno",
-    about:
-      "Um belo cordel moderno de autoria de Milton Duarte! O texto retrata de forma poética a frustração e saudade que alguns sentem em relação à comunicação atual dominada pela tecnologia. .",
-    path: "https://chrystophermedeiros.github.io/projeto-cordel/",
-    github: "https://github.com/chrystophermedeiros/projeto-cordel",
-    tag: [
-      { id: 1, name: "HTML", title: skills[0].title, img: skills[0].img },
-      { id: 2, name: "CSS", title: skills[1].title, img: skills[1].img },
     ],
   },
 
@@ -103,6 +75,35 @@ export const projects = [
       { id: 4, name: "React", title: skills[3].title, img: skills[3].img },
     ],
   },
+  {
+    id: uuidv1(),
+    img: imgAndroid,
+    name: "Curiosidades Tecnologicas",
+    about:
+      "Curiosidades de Tecnologia é um site que reúne informações interessantes sobre o mundo Tech, com foco no sistema operacional Android. Nele, você encontrará notícias, artigos e curiosidades sobre o icônico mascote do Android, desde sua origem até sua evolução para o Bugdroid. Além disso, o site compartilha curiosidades sobre as versões do Android, que são nomeadas em ordem alfabética em homenagem a doces. O site foi criado por Chrystopher Medeiros para o CursoemVideo e é um ótimo lugar para aprender mais sobre o sistema Android e suas curiosidades.",
+    path: "https://chrystophermedeiros.github.io/projeto-android/",
+    github: "https://github.com/chrystophermedeiros/projeto-android",
+    tag: [
+      { id: 1, name: "HTML", title: skills[0].title, img: skills[0].img },
+      { id: 2, name: "CSS", title: skills[1].title, img: skills[1].img },
+    ],
+  },
+
+  {
+    id: uuidv1(),
+    img: imgCordel,
+    name: "Cordel Moderno",
+    about:
+      "Um belo cordel moderno de autoria de Milton Duarte! O texto retrata de forma poética a frustração e saudade que alguns sentem em relação à comunicação atual dominada pela tecnologia. .",
+    path: "https://chrystophermedeiros.github.io/projeto-cordel/",
+    github: "https://github.com/chrystophermedeiros/projeto-cordel",
+    tag: [
+      { id: 1, name: "HTML", title: skills[0].title, img: skills[0].img },
+      { id: 2, name: "CSS", title: skills[1].title, img: skills[1].img },
+    ],
+  },
+
+ 
 
   {
     id: uuidv1(),
