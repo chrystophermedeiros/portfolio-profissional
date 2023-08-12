@@ -1,4 +1,5 @@
 import { v1 as uuidv1 } from "uuid";
+import imgCodeBurguer from "../img/projects/projeto-code-burger.jpg"
 import imgAndroid from "../img/projects/projeto-android.jpg";
 import imgCordel from "../img/projects/projeto-cordel.png";
 import imgMovies from "../img/projects/projeto-movies.png";
@@ -8,6 +9,22 @@ import imgTarefas from "../img/projects/projeto-tarefas.png";
 import skills from "./skills";
 
 export const projects = [
+
+  {
+    id: uuidv1(),
+    img: imgCodeBurguer,
+    name: "Code Burger",
+    about:
+      "Este projeto é um site de e-commerce que utiliza HTML, CSS, JavaScript, React, Node.js e consumo de APIs para oferecer aos usuários a capacidade de explorar produtos, adicionar itens ao carrinho, realizar login e efetuar compras online.",
+    path: "https://infertace-code-burger.vercel.app/",
+    github: "https://github.com/chrystophermedeiros/infertaceCodeBurger",
+    tag: [
+      { id: 1, name: "HTML", title: skills[0].title, img: skills[0].img },
+      { id: 2, name: "CSS", title: skills[1].title, img: skills[1].img },
+      { id: 3, name: "JavaScript", title: skills[2].title, img: skills[2].img },
+      { id: 4, name: "React", title: skills[3].title, img: skills[3].img },
+    ],
+  },
   {
     id: uuidv1(),
     img: imgAndroid,
