@@ -3,6 +3,7 @@ import ImgCtCursoemvideo1 from "../img/certificates/certificado-HTML5-e-CSS3-mod
 import ImgCtCursoemvideo2 from "../img/certificates/certificado-HTML5-e-CSS3-modulo-2-de-5.jpg";
 import ImgCtCursoemvideo3 from "../img/certificates/certificado-HTML5-e-CSS3-modulo-3-de-5.jpg";
 import ImgDiplomaADS from "../img/certificates/diploma-ads.jpg"
+import ImgRockseatIaDevs from "../img/certificates/certificado-Rocketseat-IaDevs.png"
 import skills from "./skills";
 
 export const certificates = [
@@ -81,6 +82,21 @@ export const certificates = [
     ],
     institution: [
       { name: "Curso em Video", img: "/img/institution/devclub.png" },
+    ],
+  },
+
+  {
+    id: 11,
+    name: "AI for Devs",
+    img: ImgRockseatIaDevs,
+    date: 2023,
+    hours: 10,
+    tag: [
+      { id: 1, name: "HTML", title: skills[0].title, img: skills[0].img },
+      { id: 2, name: "CSS", title: skills[1].title, img: skills[1].img },
+    ],
+    institution: [
+      { name: "Rocketseat", img: "/img/institution/devclub.png" },
     ],
   },
 ];
