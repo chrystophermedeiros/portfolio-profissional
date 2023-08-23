@@ -79,7 +79,7 @@ export function Contact() {
 
             <textarea
               name="message"
-              rows="7"
+              rows="6"
               placeholder="Sua Mensagem"
               required
             ></textarea>
