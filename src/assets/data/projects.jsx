@@ -4,6 +4,7 @@ import imgAndroid from "../img/projects/projeto-android.jpg";
 import imgCordel from "../img/projects/projeto-cordel.png";
 import imgMovies from "../img/projects/projeto-movies.png";
 import imgPortfolioWebsite from "../img/projects/projeto-portfolio-website.jpg";
+import imgDevMoney from "../img/projects/projeto-devmoney.jpg";
 import imgAnimate from "../img/projects/projeto-animate-sprite.png";
 import imgTarefas from "../img/projects/projeto-tarefas.png";
 import skills from "./skills";
@@ -27,7 +28,7 @@ export const projects = [
 
   {
     id: uuidv1(),
-    img: imgCodeBurguer,
+    img: imgDevMoney,
     name: "DevMoney",
     about:
       "Este projeto é um site de controle finaceiro com graficos",
