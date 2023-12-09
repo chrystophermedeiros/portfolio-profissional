@@ -25,12 +25,12 @@ export const skills = [
       img: imgJS,
       color: '#fefe01'
     },
-    // {
-    //   id: 4,
-    //   title: 'TypeScript',
-    //   img: '/skills/typescript.svg',
-    //   color: '#007ACC'
-    // },
+    {
+      id: 4,
+      title: 'TypeScript',
+      img: '/skills/typescript.svg',
+      color: '#007ACC'
+    },
     {
       id: 5,
       title: 'React JS',

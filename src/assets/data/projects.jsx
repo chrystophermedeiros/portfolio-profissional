@@ -27,6 +27,21 @@ export const projects = [
 
   {
     id: uuidv1(),
+    img: imgCodeBurguer,
+    name: "DevMoney",
+    about:
+      "Este projeto é um site de controle finaceiro com graficos",
+    path: "https://devmoney-interface.vercel.app/",
+    github: "https://github.com/chrystophermedeiros/devmoney-interface",
+    tag: [
+      { id: 1, name: "React", title: skills[3].title, img: skills[3].img },
+      { id: 2, name: "TypeScript", title: skills[4].title, img: skills[4].img },
+      { id: 3, name: "Styled-Components", title: skills[7].title, img: skills[7].img },
+    ],
+  },
+
+  {
+    id: uuidv1(),
     img: imgMovies,
     name: "Movies",
     about: `Projeto voltado a catalago de filmes e series populares com consumo de api do site: ${(
