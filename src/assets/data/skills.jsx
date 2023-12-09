@@ -4,6 +4,7 @@ import imgJS from "../img/skills/javascript.svg"
 import imgReact from "../img/skills/react.svg"
 import imgSytleC from "../img/skills/styled-components.svg"
 import imgMaterialUi from "../img/skills/material-ui.svg"
+import imgTypeScript from "../img/skills/typescript.svg"
 import imgGit from "../img/skills/git.svg"
 
 export const skills = [
@@ -28,7 +29,7 @@ export const skills = [
     {
       id: 4,
       title: 'TypeScript',
-      img: '/skills/typescript.svg',
+      img: imgTypeScript,
       color: '#007ACC'
     },
     {
