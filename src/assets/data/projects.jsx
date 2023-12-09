@@ -22,7 +22,7 @@ export const projects = [
       { id: 1, name: "HTML", title: skills[0].title, img: skills[0].img },
       { id: 2, name: "CSS", title: skills[1].title, img: skills[1].img },
       { id: 3, name: "JavaScript", title: skills[2].title, img: skills[2].img },
-      { id: 4, name: "React", title: skills[3].title, img: skills[3].img },
+      { id: 4, name: "React", title: skills[4].title, img: skills[4].img },
     ],
   },
 
@@ -36,8 +36,8 @@ export const projects = [
     github: "https://github.com/chrystophermedeiros/devmoney-interface",
     tag: [
       { id: 1, name: "React", title: skills[3].title, img: skills[3].img },
-      { id: 2, name: "TypeScript", title: skills[4].title, img: skills[4].img },
-      { id: 3, name: "Styled-Components", title: skills[7].title, img: skills[7].img },
+      { id: 2, name: "TypeScript", title: skills[3].title, img: skills[3].img },
+      { id: 3, name: "StyledComponet", title: skills[6].title, img: skills[6].img },
     ],
   },
 
@@ -56,7 +56,7 @@ export const projects = [
       { id: 1, name: "HTML", title: skills[0].title, img: skills[0].img },
       { id: 2, name: "CSS", title: skills[1].title, img: skills[1].img },
       { id: 3, name: "JavaScript", title: skills[2].title, img: skills[2].img },
-      { id: 4, name: "React", title: skills[3].title, img: skills[3].img },
+      { id: 4, name: "React", title: skills[4].title, img: skills[4].img },
     ],
   },
 
@@ -72,7 +72,7 @@ export const projects = [
       { id: 1, name: "HTML", title: skills[0].title, img: skills[0].img },
       { id: 2, name: "CSS", title: skills[1].title, img: skills[1].img },
       { id: 3, name: "JavaScript", title: skills[2].title, img: skills[2].img },
-      { id: 4, name: "React", title: skills[3].title, img: skills[3].img },
+      { id: 4, name: "React", title: skills[4].title, img: skills[4].img },
     ],
   },
 
@@ -85,10 +85,9 @@ export const projects = [
     path: "https://portfolio-cms99.netlify.app/",
     github: "https://github.com/chrystophermedeiros/portfolio_website",
     tag: [
-      { id: 1, name: "HTML", title: skills[0].title, img: skills[0].img },
-      { id: 2, name: "CSS", title: skills[1].title, img: skills[1].img },
-      { id: 3, name: "JavaScript", title: skills[2].title, img: skills[2].img },
-      { id: 4, name: "React", title: skills[3].title, img: skills[3].img },
+      { id: 1, name: "TypeScript", title: skills[3].title, img: skills[3].img },
+      { id: 2, name: "JavaScript", title: skills[2].title, img: skills[2].img },
+      { id: 3, name: "React", title: skills[4].title, img: skills[4].img },
     ],
   },
   {
