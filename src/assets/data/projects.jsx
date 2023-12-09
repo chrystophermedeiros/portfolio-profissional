@@ -37,7 +37,7 @@ export const projects = [
     tag: [
       { id: 1, name: "React", title: skills[3].title, img: skills[3].img },
       { id: 2, name: "TypeScript", title: skills[3].title, img: skills[3].img },
-      { id: 3, name: "StyledComponet", title: skills[6].title, img: skills[6].img },
+      { id: 3, name: "StyledComponet", title: skills[5].title, img: skills[5].img },
     ],
   },
 
