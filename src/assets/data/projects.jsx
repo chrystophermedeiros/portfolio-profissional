@@ -35,7 +35,7 @@ export const projects = [
     path: 'https://devmoney-interface.vercel.app/',
     github: 'https://github.com/chrystophermedeiros/devmoney-interface',
     tag: [
-      { id: 1, name: 'React', title: skills[3].title, img: skills[3].img },
+      { id: 1, name: 'React', title: skills[4].title, img: skills[4].img },
       { id: 2, name: 'TypeScript', title: skills[3].title, img: skills[3].img },
       { id: 3, name: 'StyledC', title: skills[5].title, img: skills[5].img },
     ],
