@@ -1,28 +1,32 @@
+import React, { useState } from 'react';
+import Carousel from 'react-elastic-carousel';
+import { FaSistrix } from 'react-icons/fa';
+import { FiGithub } from 'react-icons/fi';
+
+import { projects } from '../../data/projects';
+import { Button } from '../Button';
+import { Titles } from '../Titles';
 import {
   Container,
   ContainerItems,
   Card,
   ButtonContainer,
   ImgCard,
-} from "./style";
-import Carousel from "react-elastic-carousel";
-import { projects } from "../../data/projects";
-import { Button } from "../Button";
-import React, { useState } from "react";
-import { FaSistrix } from "react-icons/fa";
-import { FiGithub } from "react-icons/fi";
-import { Titles } from "../Titles";
+} from './style';
 
 export function Projects() {
-  const [searchTerm, setSearchTerm] = useState("");
+  const [searchTerm, setSearchTerm] = useState('');
 
   const handleSearch = (event) => {
     setSearchTerm(event.target.value);
   };
 
-  const filteredProjects = projects.filter((project) =>
-    project.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
-    project.tag.some((tag) => tag.name.toLowerCase().includes(searchTerm.toLowerCase()))
+  const filteredProjects = projects.filter(
+    (project) =>
+      project.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      project.tag.some((tag) =>
+        tag.name.toLowerCase().includes(searchTerm.toLowerCase()),
+      ),
   );
 
   const breakPoints = [
@@ -34,7 +38,7 @@ export function Projects() {
   ];
 
   return (
-    <Container id={"projetos"}>
+    <Container id={'projetos'}>
       <Titles>Projetos</Titles>
       <div className="input">
         <input
@@ -42,7 +46,7 @@ export function Projects() {
           placeholder="Projeto ou tecnologia"
           value={searchTerm}
           onChange={handleSearch}
-        />{" "}
+        />{' '}
         <FaSistrix />
       </div>
 
@@ -50,35 +54,33 @@ export function Projects() {
         {filteredProjects.length > 0 ? (
           <Carousel
             itemsToShow={3}
-            style={{ width: "100%" }}
+            style={{ width: '100%' }}
             breakPoints={breakPoints}
           >
             {filteredProjects &&
               filteredProjects.map((obj) => (
                 <Card key={obj.id}>
-                  <ImgCard className="cardImg" src={obj.img}/>
+                  <ImgCard className="cardImg" src={obj.img} />
                   <p>{obj.name}</p>
                   <ButtonContainer className="contentButton">
-                    <a target="_blank" href={obj.path}>
+                    <a target="_blank" href={obj.path} rel="noreferrer">
                       <Button className="button" btn1>
-                        Visitar{" "}
+                        Visitar{' '}
                       </Button>
                     </a>
-                    <a target="_blank" href={obj.github}>
+                    <a target="_blank" href={obj.github} rel="noreferrer">
                       <Button className="button">
                         Github <FiGithub />
                       </Button>
                     </a>
                   </ButtonContainer>
-                  <div className="skills" >
-                    {obj.tag.map((tag) =>(
+                  <div className="skills">
+                    {obj.tag.map((tag) => (
                       <div className="containerTags" key={tag.id}>
                         <img src={tag.img} alt="" />
                         <p>{tag.name}</p>
-                  
                       </div>
-                    )) }
-
+                    ))}
                   </div>
                 </Card>
               ))}

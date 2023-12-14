@@ -1,17 +1,19 @@
+import { ArrowDown } from 'phosphor-react';
+import React from 'react';
+import { AiOutlineDownload } from 'react-icons/ai';
+import { FiGithub, FiLinkedin } from 'react-icons/fi';
+
+import CV from '../../img/cv/cv.pdf';
+import I from '../../img/i/eu.png';
+import { Button } from '../Button';
 import {
   Container,
   ContainerItems,
   MyImg,
   Card,
   ContainerButton,
-} from "./style";
-import I from "../../img/i/eu.png";
-import { Button } from "../Button";
-import { FiGithub, FiLinkedin } from "react-icons/fi";
-import { AiOutlineDownload } from "react-icons/ai";
-import CV from "../../img/cv/cv.pdf";
-import { ArrowDown } from "phosphor-react";
-import { Scroll } from "./style";
+  Scroll,
+} from './style';
 
 export function Main() {
   return (
@@ -25,19 +27,24 @@ export function Main() {
             <a
               target="_blank"
               href="https://www.linkedin.com/in/chrystopher-medeiros"
+              rel="noreferrer"
             >
               <Button className="button" btn1>
                 <FiLinkedin className="icon" />
               </Button>
             </a>
-            <a target="_blank" href="https://github.com/chrystophermedeiros">
+            <a
+              target="_blank"
+              href="https://github.com/chrystophermedeiros"
+              rel="noreferrer"
+            >
               <Button className="button">
                 <FiGithub className="icon" />
               </Button>
             </a>
           </ContainerButton>
           <div className="cvContact">
-            <a className="cv" target="_blank" href={CV}>
+            <a className="cv" target="_blank" href={CV} rel="noreferrer">
               <Button btn1>
                 Download CV <AiOutlineDownload className="icon" />
               </Button>
@@ -45,12 +52,11 @@ export function Main() {
             <Scroll>
               <a href="#contato">
                 <span className="contato">
-                  Contato <ArrowDown weight="bold"  />
+                  Contato <ArrowDown weight="bold" />
                 </span>
               </a>
             </Scroll>
           </div>
-         
         </Card>
         <MyImg src={I} alt="" />
       </ContainerItems>

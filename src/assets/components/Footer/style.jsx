@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 export const FooterContainer = styled.footer`
   margin-top: 5rem;
@@ -23,7 +23,6 @@ export const FooterContainer = styled.footer`
   }
 
   .links {
-    
     cursor: pointer;
     display: flex;
     gap: 9px;
@@ -39,4 +38,4 @@ export const FooterContainer = styled.footer`
       }
     }
   }
-`
+`;

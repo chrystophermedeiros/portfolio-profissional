@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Title = styled.h1`
   color: var(--color-primary);
@@ -8,13 +8,10 @@ export const Title = styled.h1`
   margin-bottom: 20px;
   transition: var(--transition);
 
-
   @media screen and (max-width: 800px) {
-    
   }
 
   &:hover {
     color: var(--color-primary-variant);
-    
   }
 `;

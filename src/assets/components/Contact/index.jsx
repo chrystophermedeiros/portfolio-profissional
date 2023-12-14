@@ -1,13 +1,13 @@
-import { Container, ContainerItems } from "./style";
-import { Titles } from "../Titles";
-import { MdOutlineMail } from "react-icons/md";
-import { BsWhatsapp } from "react-icons/bs";
-import { useState, useRef } from "react";
-import { Button } from "../Button";
-import Alert from "@mui/material/Alert";
-import Stack from "@mui/material/Stack";
+import emailjs from '@emailjs/browser';
+import Alert from '@mui/material/Alert';
+import Stack from '@mui/material/Stack';
+import React, { useState, useRef } from 'react';
+import { BsWhatsapp } from 'react-icons/bs';
+import { MdOutlineMail } from 'react-icons/md';
 
-import emailjs from "@emailjs/browser";
+import { Button } from '../Button';
+import { Titles } from '../Titles';
+import { Container, ContainerItems } from './style';
 
 export function Contact() {
   const form = useRef();
@@ -19,21 +19,20 @@ export function Contact() {
 
     emailjs
       .sendForm(
-        "service_7x3o3ir",
-        "template_yhl8i7s",
+        'service_7x3o3ir',
+        'template_yhl8i7s',
         form.current,
-        "rWd3F_fyG4Noze9FY"
+        'rWd3F_fyG4Noze9FY',
       )
-      .then(
-        (result) => {
-          setEmailSent(true);
-          setIsError(false);
-        },
-        (error) => {
-          setIsError(true);
-          setEmailSent(false);
-        }
-      );
+      .then((result) => {
+        setEmailSent(true);
+        setIsError(false);
+      })
+      .catch((error) => {
+        console.error('Erro ao enviar e-mail:', error);
+        setIsError(true);
+        setEmailSent(false);
+      });
 
     e.target.reset();
   };
@@ -70,7 +69,7 @@ export function Contact() {
             </article>
             {/* ... */}
           </div>
-          {/*Fim de opção de contato*/}
+          {/* Fim de opção de contato */}
           <form ref={form} onSubmit={sendEmail}>
             {/* ... */}
             <input type="text" name="name" placeholder="Seu Nome" required />
@@ -88,12 +87,12 @@ export function Contact() {
               Enviar Mensagem
             </Button>
             {emailSent && (
-              <Stack sx={{ width: "100%" }} spacing={2}>
+              <Stack sx={{ width: '100%' }} spacing={2}>
                 <Alert severity="success">Enviado com sucesso</Alert>
               </Stack>
             )}
             {isError && (
-              <Stack sx={{ width: "100%" }} spacing={2}>
+              <Stack sx={{ width: '100%' }} spacing={2}>
                 <Alert severity="error">Erro ao enviar a mensagem</Alert>
               </Stack>
             )}

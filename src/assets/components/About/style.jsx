@@ -1,18 +1,17 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Container = styled.section`
   height: 100%;
   width: 90%;
   margin: 0 5%;
 
-
   p {
     text-align: justify;
     letter-spacing: 1px;
 
     @media (max-width: 994px) {
-        letter-spacing: 0px;
-        text-align: center;
+      letter-spacing: 0px;
+      text-align: center;
     }
   }
 `;
@@ -22,7 +21,7 @@ export const ContainerItems = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
- 
+
   gap: 20px;
 
   @media (max-width: 994px) {

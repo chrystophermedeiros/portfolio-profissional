@@ -1,10 +1,10 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Container = styled.div`
   height: 100%;
   width: 90%;
   margin: 0 5%;
-  /* background: ${(props) => (props.isDark ? "#14fae753" : "")}; */
+  /* background: ${(props) => (props.isDark ? '#14fae753' : '')}; */
 `;
 
 export const ContainerItems = styled.div`
@@ -30,7 +30,6 @@ export const ContainerItems = styled.div`
     @media (max-width: 700px) {
       font-size: 22px;
     }
-    
   }
 
   .cv {
@@ -38,17 +37,16 @@ export const ContainerItems = styled.div`
     justify-content: center;
     align-items: center;
   }
-  .cvContact{
+  .cvContact {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
   }
-  .border{
+  .border {
     display: flex;
     justify-content: center;
     align-items: center;
-
   }
 
   @media (max-width: 994px) {
@@ -104,10 +102,9 @@ export const ContainerButton = styled.div`
 `;
 
 export const Scroll = styled.div`
-margin-top: 10px;
+  margin-top: 10px;
 
-
-  .contato{
+  .contato {
     margin-top: 20px;
     font-size: 1.2rem;
     text-decoration: none;
@@ -116,7 +113,6 @@ margin-top: 10px;
 
     cursor: pointer;
 
-  
     &:hover {
       opacity: 0.6;
     }

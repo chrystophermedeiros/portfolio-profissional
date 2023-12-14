@@ -1,22 +1,36 @@
-import React, { useEffect, useState, useMemo } from "react";
-import { Container, ContainerItems } from "./style";
-import { Header, About, Main, Certificates, Projects, Skills, Footer, Contact, ScrollTop, Experience } from "../../components/";
-import { MdLightMode, MdModeNight } from "react-icons/md";
+import React, { useEffect, useState, useMemo } from 'react';
+import { MdLightMode, MdModeNight } from 'react-icons/md';
 
-
+import {
+  Header,
+  About,
+  Main,
+  Projects,
+  Skills,
+  Footer,
+  Contact,
+  ScrollTop,
+  Experience,
+} from '../../components/';
+import { Container, ContainerItems } from './style';
 
 export function Home() {
-  const [isDark, setIsDark] = useState(() => localStorage.getItem("isDark") === "true");
+  const [isDark, setIsDark] = useState(
+    () => localStorage.getItem('isDark') === 'true',
+  );
 
   useEffect(() => {
-    localStorage.setItem("isDark", isDark);
+    localStorage.setItem('isDark', isDark);
   }, [isDark]);
 
   const handleDarkModeToggle = () => {
     setIsDark((prevIsDark) => !prevIsDark);
   };
 
-  const icon = useMemo(() => (isDark ? <MdLightMode /> : <MdModeNight />), [isDark]);
+  const icon = useMemo(
+    () => (isDark ? <MdLightMode /> : <MdModeNight />),
+    [isDark],
+  );
 
   return (
     <Container isDark={isDark}>
@@ -25,14 +39,12 @@ export function Home() {
         <Main />
         <About />
         <Skills />
-        <Experience/>
-        <Projects/>
+        <Experience />
+        <Projects />
         <ScrollTop />
-       <Contact/>
+        <Contact />
       </ContainerItems>
-      <Footer/>
+      <Footer />
     </Container>
-   
   );
 }
-

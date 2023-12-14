@@ -1,4 +1,4 @@
-import styled, { css } from 'styled-components'
+import styled, { css } from 'styled-components';
 
 const buttonStyled = css`
   border: 3px solid #ffffff;
@@ -9,7 +9,6 @@ const buttonStyled = css`
   cursor: pointer;
 
   font-weight: 500;
- 
 
   @media screen and (max-width: 800px) {
     font-size: 16px;
@@ -20,11 +19,11 @@ const buttonStyled = css`
     background: var(--color-white);
     border: 3px solid var(--color-primary-variant);
   }
-`
+`;
 
 export const ButtonWhite = styled.button`
   ${buttonStyled}
-`
+`;
 
 export const ButtonPrimary = styled.button`
   ${buttonStyled}
@@ -37,4 +36,4 @@ export const ButtonPrimary = styled.button`
     background: var(--color-primary-variant);
     color: #ffffff;
   }
-`
+`;

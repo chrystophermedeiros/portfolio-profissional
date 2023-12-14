@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Container = styled.section`
   display: flex;
@@ -9,9 +9,8 @@ export const Container = styled.section`
 
   .css-19kzrtu {
     padding: 10px 0;
-
   }
- 
+
   .box {
     height: 100%;
     width: 100%;
@@ -24,8 +23,8 @@ export const Container = styled.section`
     border-radius: 20px;
   }
 
-  .css-1nuo49t-MuiButtonBase-root-MuiTab-root{
-    &:hover{
+  .css-1nuo49t-MuiButtonBase-root-MuiTab-root {
+    &:hover {
       color: var(--color-primary);
     }
   }
@@ -37,11 +36,9 @@ export const Container = styled.section`
 
     align-items: center;
     color: white;
-    
+
     border-radius: 19px;
     border: none;
-
-    
   }
 
   .css-1nuo49t-MuiButtonBase-root-MuiTab-root {

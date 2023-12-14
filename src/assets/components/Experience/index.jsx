@@ -1,6 +1,8 @@
-import VerticalTabs from "../CardExperience";
-import { Titles } from "../Titles";
-import { Section } from "./style";
+import React from 'react';
+
+import VerticalTabs from '../CardExperience';
+import { Titles } from '../Titles';
+import { Section } from './style';
 
 export function Experience() {
   return (

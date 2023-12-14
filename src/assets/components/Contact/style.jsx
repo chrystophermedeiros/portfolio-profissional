@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Container = styled.section`
   height: 100%;
@@ -7,11 +7,11 @@ export const Container = styled.section`
 `;
 
 export const ContainerItems = styled.div`
-width: 100%;
-height: 100%;
-a{
-  text-decoration: none;
-}
+  width: 100%;
+  height: 100%;
+  a {
+    text-decoration: none;
+  }
   .container.contact_container {
     width: 68%;
     display: grid;
@@ -30,7 +30,7 @@ a{
     padding: 1.2rem;
     border-radius: 1.2rem;
     text-align: center;
- 
+
     border: 1px solid transparent;
     transition: var(--transition);
   }
@@ -42,7 +42,6 @@ a{
 
   .contact_option-icon {
     font-size: 1.5rem;
-  
   }
 
   .contact_option a {
@@ -66,19 +65,16 @@ a{
     justify-content: center;
     gap: 2px;
     background-color: var(--color-bg-variant);
-   a{
-    text-decoration: none;
-    list-style: none;
-    color: aqua;
+    a {
+      text-decoration: none;
+      list-style: none;
+      color: aqua;
 
-    &:hover{
-      opacity: 0.6;
+      &:hover {
+        opacity: 0.6;
+      }
     }
-   }
-
   }
-
-
 
   form {
     display: flex;
@@ -103,7 +99,6 @@ a{
     .container.contact_container {
       grid-template-columns: 1fr;
       gap: 2rem;
-      
     }
   }
 
@@ -111,7 +106,6 @@ a{
 
   @media screen and (max-width: 600px) {
     .container.contact_container {
-
       width: 100%;
     }
   }

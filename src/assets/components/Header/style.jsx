@@ -1,12 +1,11 @@
-import styled from "styled-components";
-
+import styled from 'styled-components';
 
 export const Container = styled.header`
- box-shadow: black 0px 10px 30px 1px;
+  box-shadow: black 0px 10px 30px 1px;
   position: fixed;
   width: 100%;
   top: 0;
- 
+
   font-weight: 600;
   font-size: 1.2rem;
 
@@ -23,7 +22,6 @@ export const Container = styled.header`
     justify-content: space-around;
     padding: 1rem 0;
     align-items: center;
-   
   }
 
   @media (min-width: 2000px) {
@@ -83,9 +81,8 @@ export const NavMenu = styled.div`
     z-index: 10;
     opacity: 0.95;
     position: fixed;
-    transform: ${({ open }) => (open ? "translateX(0)" : "translateX(100%)")};
+    transform: ${({ open }) => (open ? 'translateX(0)' : 'translateX(100%)')};
     transition: transform 0.5s ease-in-out;
-   
   }
 
   ul {
@@ -108,7 +105,7 @@ export const NavMenu = styled.div`
         position: relative;
 
         &:before {
-          content: "";
+          content: '';
           height: 2px;
           width: auto;
           background-color: var(--color-primary-variant);

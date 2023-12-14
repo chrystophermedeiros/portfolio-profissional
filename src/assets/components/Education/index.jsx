@@ -1,28 +1,30 @@
-import Timeline from "@mui/lab/Timeline";
-import TimelineItem from "@mui/lab/TimelineItem";
-import TimelineSeparator from "@mui/lab/TimelineSeparator";
-import TimelineConnector from "@mui/lab/TimelineConnector";
-import TimelineContent from "@mui/lab/TimelineContent";
-import TimelineOppositeContent from "@mui/lab/TimelineOppositeContent";
-import TimelineDot from "@mui/lab/TimelineDot";
-import Typography from "@mui/material/Typography";
-import { education } from "../../data/education";
-import { Container, ContainerItems } from "./style";
+import Timeline from '@mui/lab/Timeline';
+import TimelineConnector from '@mui/lab/TimelineConnector';
+import TimelineContent from '@mui/lab/TimelineContent';
+import TimelineDot from '@mui/lab/TimelineDot';
+import TimelineItem from '@mui/lab/TimelineItem';
+import TimelineOppositeContent from '@mui/lab/TimelineOppositeContent';
+import TimelineSeparator from '@mui/lab/TimelineSeparator';
+import Typography from '@mui/material/Typography';
+import React from 'react';
+
+import { education } from '../../data/education';
+import { Container, ContainerItems } from './style';
 export function Education() {
   return (
     <div>
       {education.map((obj) => (
-        <Container>
+        <Container key={obj.id}>
           <ContainerItems>
             <Timeline className="teste" position="alternate">
               <TimelineItem>
                 <TimelineOppositeContent
-                  sx={{ m: "auto" }}
+                  sx={{ m: 'auto' }}
                   align="center"
                   variant="body2"
                   color="text.secondary"
                 >
-                  <Typography color={"var(--color-primary)"}>
+                  <Typography color={'var(--color-primary)'}>
                     <p>{obj.institution}</p>
                   </Typography>
                 </TimelineOppositeContent>
@@ -33,8 +35,8 @@ export function Education() {
                   </TimelineDot>
                   <TimelineConnector />
                 </TimelineSeparator>
-                <TimelineContent sx={{ py: "20px", px: 4 }}>
-                  <Typography color={"var(--color-primary-variant)"} >
+                <TimelineContent sx={{ py: '20px', px: 4 }}>
+                  <Typography color={'var(--color-primary-variant)'}>
                     {obj.course}
                   </Typography>
                   <Typography>{obj.level}</Typography>

@@ -1,25 +1,27 @@
-import { Container, ContainerItems, AboutImg, Card } from "./style";
-import I from "../../img/i/sobre.jpeg";
-import { Titles } from "../Titles";
+import React from 'react';
+
+import I from '../../img/i/sobre.jpeg';
+import { Titles } from '../Titles';
+import { Container, ContainerItems, AboutImg, Card } from './style';
 
 export function About() {
   return (
-    <Container id={"sobre"}>
+    <Container id={'sobre'}>
       <Titles>Sobre mim</Titles>
       <ContainerItems>
         <AboutImg src={I} alt="" />
         <Card>
           <p>
-            Sou um desenvolvedor Front End com experiência em análise de TI e
-            cursando a pós-graduação em Engenharia de Software, sou
-            especializado em HTML, CSS, JavaScript e frameworks como React.
-            Tenho habilidades comprovadas como freelancer, entregando soluções
-            de alta qualidade para clientes diversos. Minha formação em Análise
-            e Desenvolvimento de Sistemas, combinada com meu compromisso em me
-            aprimorar constantemente, me permite acompanhar as últimas
-            tendências e melhores práticas da indústria. Estou disponível para
-            projetos desafiadores como freelancer, oferecendo resultados
-            excepcionais no desenvolvimento Front End.
+            Programador Front-End apaixonado por tecnologia, possuo habilidades
+            em React, JavaScript, Node.js, Styled-components, Material UI, HTML
+            e CSS. Tenho experiência em projetos de desenvolvimento web,
+            oferecendo soluções personalizadas e criativas. Especializado em
+            criar interfaces de usuário interativas e responsivas. Habilidades
+            sólidas em bibliotecas e frameworks populares, como React, para
+            construir aplicações web modernas e escaláveis. Focado na qualidade
+            do código e atenção aos detalhes. Pronto para enfrentar desafios
+            técnicos complexos. Aberto a novas oportunidades para criar
+            experiências digitais de alto nível.
           </p>
         </Card>
       </ContainerItems>

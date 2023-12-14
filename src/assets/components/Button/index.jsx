@@ -1,4 +1,6 @@
-import { ButtonPrimary, ButtonWhite } from './style'
+import React from 'react';
+
+import { ButtonPrimary, ButtonWhite } from './style';
 
 export function Button({ children, btn1, ...rest }) {
   return (
@@ -9,5 +11,5 @@ export function Button({ children, btn1, ...rest }) {
         <ButtonWhite {...rest}>{children}</ButtonWhite>
       )}
     </>
-  )
+  );
 }

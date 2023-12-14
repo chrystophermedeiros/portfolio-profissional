@@ -1,21 +1,14 @@
-import  styled  from "styled-components";
+import styled from 'styled-components';
 
 export const Container = styled.div`
-  
-    height: 100%;
-    width: 100%;
-    background: ${(props) => props.isDark ? '#00000097' : '' };
+  height: 100%;
+  width: 100%;
+  background: ${(props) => (props.isDark ? '#00000097' : '')};
 
-   .teste{
-    
-   }
-`
-
-
+  .teste {
+  }
+`;
 
 export const ContainerItems = styled.div`
-   padding-top: 60px;
-    
-    
-`
-
+  padding-top: 60px;
+`;

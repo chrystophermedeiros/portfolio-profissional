@@ -1,16 +1,17 @@
-import * as React from "react";
-import { useTheme } from "@mui/material/styles";
-import Box from "@mui/material/Box";
-import MobileStepper from "@mui/material/MobileStepper";
-import Paper from "@mui/material/Paper";
-import Typography from "@mui/material/Typography";
-import Button from "@mui/material/Button";
-import KeyboardArrowLeft from "@mui/icons-material/KeyboardArrowLeft";
-import KeyboardArrowRight from "@mui/icons-material/KeyboardArrowRight";
-import SwipeableViews from "react-swipeable-views";
-import { autoPlay } from "react-swipeable-views-utils";
-import { certificates } from "../../data/certificates";
-import { Container } from "./style";
+import KeyboardArrowLeft from '@mui/icons-material/KeyboardArrowLeft';
+import KeyboardArrowRight from '@mui/icons-material/KeyboardArrowRight';
+import Box from '@mui/material/Box';
+import Button from '@mui/material/Button';
+import MobileStepper from '@mui/material/MobileStepper';
+import Paper from '@mui/material/Paper';
+import { useTheme } from '@mui/material/styles';
+import Typography from '@mui/material/Typography';
+import * as React from 'react';
+import SwipeableViews from 'react-swipeable-views';
+import { autoPlay } from 'react-swipeable-views-utils';
+
+import { certificates } from '../../data/certificates';
+import { Container } from './style';
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
 export function Certificates() {
@@ -31,24 +32,26 @@ export function Certificates() {
   };
 
   return (
-    <Container >
-      <Box className="containerItens" sx={{ maxWidth: 600, minWidth: 300, flexGrow: 1 }}>
+    <Container>
+      <Box
+        className="containerItens"
+        sx={{ maxWidth: 600, minWidth: 300, flexGrow: 1 }}
+      >
         <Paper
           className="header"
           square
           elevation={0}
           sx={{
-            display: "flex",
-            alignItems: "center",
+            display: 'flex',
+            alignItems: 'center',
             height: 50,
             pl: 2,
-          
           }}
         >
           <Typography>{certificates[activeStep].name}</Typography>
         </Paper>
         <AutoPlaySwipeableViews
-          axis={theme.direction === "rtl" ? "x-reverse" : "x"}
+          axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'}
           index={activeStep}
           onChangeIndex={handleStepChange}
           enableMouseEvents
@@ -57,15 +60,15 @@ export function Certificates() {
             <div key={step.name}>
               {Math.abs(activeStep - index) <= 2 ? (
                 <Box
-                className="box"
+                  className="box"
                   component="img"
                   sx={{
                     height: 300,
-                    minHeight:200,
-                    display: "block",
+                    minHeight: 200,
+                    display: 'block',
                     maxWidth: 600,
-                    overflow: "hidden",
-                    width: "100%",
+                    overflow: 'hidden',
+                    width: '100%',
                   }}
                   src={step.img}
                   alt={step.name}
@@ -86,7 +89,7 @@ export function Certificates() {
               disabled={activeStep === maxSteps - 1}
             >
               Next
-              {theme.direction === "rtl" ? (
+              {theme.direction === 'rtl' ? (
                 <KeyboardArrowLeft />
               ) : (
                 <KeyboardArrowRight />
@@ -99,7 +102,7 @@ export function Certificates() {
               onClick={handleBack}
               disabled={activeStep === 0}
             >
-              {theme.direction === "rtl" ? (
+              {theme.direction === 'rtl' ? (
                 <KeyboardArrowRight />
               ) : (
                 <KeyboardArrowLeft />

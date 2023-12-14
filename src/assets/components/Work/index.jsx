@@ -1,12 +1,14 @@
-import { work } from "../../data/work";
-import { Container, ContainerItems, Card } from "./style";
+import React from 'react';
+
+import { work } from '../../data/work';
+import { Container, ContainerItems, Card } from './style';
 
 export function Work() {
   return (
     <Container>
       <ContainerItems>
         {work.map((obj) => (
-          <Card>
+          <Card key={obj.id}>
             <header>
               <article className="conatinerLeft">
                 <img src={obj.img} alt="" />
@@ -17,11 +19,8 @@ export function Work() {
               </article>
               <article>
                 <p>
-                  {obj.startdate} - {obj.enddate} 
-
-            
+                  {obj.startdate} - {obj.enddate}
                 </p>
-             
               </article>
             </header>
 
@@ -30,12 +29,12 @@ export function Work() {
               <h2>Techs:</h2>
 
               <div className="techs">
-                  {obj.techs.map((tech) => (
-                    <div className="containerTechs" key={tech.id} >
-                      <img src={tech.img} alt="" />
-                      <p>{tech.name}</p>
-                    </div>
-                  ))}
+                {obj.techs.map((tech) => (
+                  <div className="containerTechs" key={tech.id}>
+                    <img src={tech.img} alt="" />
+                    <p>{tech.name}</p>
+                  </div>
+                ))}
               </div>
             </article>
           </Card>

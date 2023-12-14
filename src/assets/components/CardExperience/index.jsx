@@ -1,13 +1,14 @@
-import PropTypes from "prop-types";
-import Tabs from "@mui/material/Tabs";
-import Tab from "@mui/material/Tab";
-import Typography from "@mui/material/Typography";
-import Box from "@mui/material/Box";
-import { Container } from "./style";
+import Box from '@mui/material/Box';
+import Tab from '@mui/material/Tab';
+import Tabs from '@mui/material/Tabs';
+import Typography from '@mui/material/Typography';
+import PropTypes from 'prop-types';
 import * as React from 'react';
-import { Work } from "../Work";
-import {Certificates} from "../Certificates";
-import { Education } from "../Education";
+
+import { Certificates } from '../Certificates';
+import { Education } from '../Education';
+import { Work } from '../Work';
+import { Container } from './style';
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -38,7 +39,7 @@ TabPanel.propTypes = {
 function a11yProps(index) {
   return {
     id: `vertical-tab-${index}`,
-    "aria-controls": `vertical-tabpanel-${index}`,
+    'aria-controls': `vertical-tabpanel-${index}`,
   };
 }
 
@@ -49,36 +50,30 @@ export default function VerticalTabs() {
     setValue(newValue);
   };
 
- 
-
   return (
-    <Container >
-     
-      <Box 
-        className="box"
-      >
-        <Tabs 
+    <Container>
+      <Box className="box">
+        <Tabs
           value={value}
           onChange={handleChange}
           variant="scrollable"
           scrollButtons="auto"
           textColor=""
           aria-label="Vertical tabs example"
-          sx={{ borderRight: 1, borderColor: "divider" }}
+          sx={{ borderRight: 1, borderColor: 'divider' }}
         >
-          <Tab  label="Trabalho" {...a11yProps(0)} />
-          <Tab  label="Educação" {...a11yProps(1)} />
-          <Tab  label="Certificados" {...a11yProps(2)} />
-         
+          <Tab label="Trabalho" {...a11yProps(0)} />
+          <Tab label="Educação" {...a11yProps(1)} />
+          <Tab label="Certificados" {...a11yProps(2)} />
         </Tabs>
-        <TabPanel  value={value} index={0}>
-          <Work/>
+        <TabPanel value={value} index={0}>
+          <Work />
         </TabPanel>
-        <TabPanel  value={value} index={1}>
-          <Education/>
+        <TabPanel value={value} index={1}>
+          <Education />
         </TabPanel>
         <TabPanel value={value} index={2}>
-        <Certificates/>
+          <Certificates />
         </TabPanel>
       </Box>
     </Container>
