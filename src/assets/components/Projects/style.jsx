@@ -107,10 +107,6 @@ export const Boxmodal = styled(Box)`
   width: 95%;
   margin: auto;
   border-radius: 20px;
-  &&:hover {
-    zoom: 1.1;
-    transition: ease-in;
-  }
 
   img {
     width: 40px;
