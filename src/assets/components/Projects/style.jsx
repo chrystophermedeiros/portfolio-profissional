@@ -98,13 +98,15 @@ export const ModalContainer = styled(Modal)`
 `;
 
 export const Boxmodal = styled(Box)`
-  width: 100%;
   display: grid;
   flex-direction: column;
   background: transparent;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   background-color: var(--color-bg-variant);
   padding: 10px;
+  width: 95%;
+  margin: auto;
+  border-radius: 20px;
   &&:hover {
     zoom: 1.1;
     transition: ease-in;
