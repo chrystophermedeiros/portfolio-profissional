@@ -12,10 +12,15 @@ import {
   Card,
   ButtonContainer,
   ImgCard,
+  Boxmodal,
+  ModalContainer,
 } from './style';
 
 export function Projects() {
   const [searchTerm, setSearchTerm] = useState('');
+  const handleOpen = (projectId) => setOpenModalId(projectId);
+  const handleClose = () => setOpenModalId(false);
+  const [openModalId, setOpenModalId] = React.useState(null);
 
   const handleSearch = (event) => {
     setSearchTerm(event.target.value);
@@ -74,14 +79,30 @@ export function Projects() {
                       </Button>
                     </a>
                   </ButtonContainer>
-                  <div className="skills">
-                    {obj.tag.map((tag) => (
-                      <div className="containerTags" key={tag.id}>
-                        <img src={tag.img} alt="" />
-                        <p>{tag.name}</p>
+                  <details onClick={() => handleOpen(obj.id)}></details>
+                  <ModalContainer
+                    open={openModalId === obj.id}
+                    onClose={handleClose}
+                  >
+                    <Boxmodal>
+                      <article className="title-about">
+                        <h3>Sobre:</h3>
+                        <button className="button-close" onClick={handleClose}>
+                          X
+                        </button>
+                      </article>
+                      <p>{obj.about}</p>
+                      <h3>Tecnologias:</h3>
+                      <div className="tec">
+                        {obj.tag.map((tag) => (
+                          <div className="abou-itens" key={tag.id}>
+                            <img src={tag.img} alt="" />
+                            <p>{tag.name}</p>
+                          </div>
+                        ))}
                       </div>
-                    ))}
-                  </div>
+                    </Boxmodal>
+                  </ModalContainer>
                 </Card>
               ))}
           </Carousel>

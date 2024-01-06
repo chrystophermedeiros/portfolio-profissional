@@ -1,7 +1,7 @@
 {
   "name": "portfolio-profissional",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -18,7 +18,6 @@
     "@mui/material": "^5.14.2",
     "@mui/styled-engine-sc": "^5.12.0",
     "emailjs": "^4.0.2",
-    "i": "^0.3.7",
     "phosphor": "^0.7.1",
     "phosphor-react": "^1.4.1",
     "react": "^18.2.0",

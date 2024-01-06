@@ -2,6 +2,7 @@ import React from 'react';
 import { FaWhatsapp } from 'react-icons/fa';
 import { FiGithub, FiLinkedin } from 'react-icons/fi';
 
+import packageJson from '../../../../package.json';
 import { FooterContainer } from './style';
 const currentDate = new Date().getFullYear();
 export function Footer() {
@@ -33,6 +34,7 @@ export function Footer() {
         >
           <FaWhatsapp />
         </a>
+        <h4>version:{packageJson.version}</h4>
       </div>
     </FooterContainer>
   );

@@ -5,26 +5,24 @@
   },
   "extends": [
     "plugin:react/recommended",
-    "standard",
     "eslint:recommended",
     "plugin:react-hooks/recommended",
     "plugin:prettier/recommended"
   ],
   "overrides": [],
   "parserOptions": {
-    "ecmaVersion": 2021,
+    "ecmaVersion": "latest",
     "sourceType": "module"
   },
   "plugins": [
     "react",
-    "react-hooks",
     "prettier",
     "eslint-plugin-import-helpers"
   ],
   "rules": {
     "import-helpers/order-imports": [
       "warn",
-      { 
+      {
         "newlinesBetween": "always",
         "groups": [
           "/^node:*/",
@@ -40,8 +38,6 @@
           "ignoreCase": true
         }
       }
-    ],
-    "react/prop-types": "off"
+    ]
   }
 }
-

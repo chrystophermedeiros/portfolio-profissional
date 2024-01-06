@@ -1,3 +1,5 @@
+import Box from '@mui/material/Box';
+import Modal from '@mui/material/Modal';
 import styled from 'styled-components';
 
 export const Container = styled.section`
@@ -63,12 +65,64 @@ export const ContainerItems = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
+  position: relative;
 `;
 
-export const Card = styled.div`
+export const ModalContainer = styled(Modal)`
+  position: relative;
   display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  align-items: center;
+  justify-content: center;
+  .title-about {
+    display: flex;
+    justify-content: space-between;
+  }
 
+  .button-close {
+    width: 40px;
+    border: none;
+    border-radius: 15px;
+    background-color: #ff00009c;
+    color: var(--color-white);
+    cursor: pointer;
+  }
+
+  .abou-itens {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+  }
+`;
+
+export const Boxmodal = styled(Box)`
+  width: 100%;
+  display: grid;
+  flex-direction: column;
+  background: transparent;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  background-color: var(--color-bg-variant);
+  padding: 10px;
+  &&:hover {
+    zoom: 1.1;
+    transition: ease-in;
+  }
+
+  img {
+    width: 40px;
+  }
+  .tec {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+`;
+export const Card = styled.div`
+  position: relative;
+  display: grid;
   width: 100%;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   border-radius: 20px;
@@ -81,39 +135,17 @@ export const Card = styled.div`
   padding: 20px;
   margin: 5px;
 
-  .skills {
-    opacity: 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    gap: 10%;
-    position: absolute;
-    z-index: 2;
-
-    .containerTags {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
-
-    img {
-      width: 40px;
-    }
-  }
-
   &:hover {
-    background: #1a1a1ae1;
+    background: transparent;
     border: 3px solid aqua;
     transition: all 500ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
+    zoom: 1.1;
 
     .cardImg {
       transition: opacity 1s ease;
-      opacity: 10%;
     }
-
     .skills {
-      transition: opacity 2s ease;
+      transition: opacity 1s ease;
       opacity: 100;
     }
   }
