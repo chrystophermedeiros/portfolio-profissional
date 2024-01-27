@@ -17,6 +17,6 @@ export const education = [
     course: 'Engenharia de Software',
     img: imgEstacio,
     level: 'Especialização',
-    status: 'Andamento',
+    status: 'Completo',
   },
 ];
