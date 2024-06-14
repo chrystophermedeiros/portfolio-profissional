@@ -46,7 +46,7 @@ export function Main() {
           <div className="cvContact">
             <a className="cv" target="_blank" href={CV} rel="noreferrer">
               <Button btn1>
-                Download CV <AiOutlineDownload className="icon" />
+                Visualizar CV <AiOutlineDownload className="icon" />
               </Button>
             </a>
             <Scroll>
