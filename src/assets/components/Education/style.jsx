@@ -13,11 +13,7 @@ export const ContainerItems = styled.div`
   align-items: center;
   justify-content: center;
 
-  padding: 0;
-  margin: 0 -10%;
   .MuiTimeline-root {
-    padding: 0;
-    margin: 0 -10%;
     display: flex;
     align-items: center;
     justify-content: center;

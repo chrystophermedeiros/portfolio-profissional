@@ -25,7 +25,7 @@ export function Education() {
                   color="text.secondary"
                 >
                   <Typography color={'var(--color-primary)'}>
-                    <p>{obj.institution}</p>
+                    <span>{obj.institution}</span>
                   </Typography>
                 </TimelineOppositeContent>
                 <TimelineSeparator>
@@ -35,11 +35,11 @@ export function Education() {
                   </TimelineDot>
                   <TimelineConnector />
                 </TimelineSeparator>
-                <TimelineContent sx={{ py: '30px', px: 4 }}>
+                <TimelineContent sx={{ py: '30px', px: 2 }}>
                   <Typography color={'var(--color-primary-variant)'}>
                     {obj.course}
                   </Typography>
-                  <Typography>{obj.level}</Typography>
+                  <span>{obj.level}</span>
                   <Typography>{obj.status}</Typography>
                 </TimelineContent>
               </TimelineItem>
