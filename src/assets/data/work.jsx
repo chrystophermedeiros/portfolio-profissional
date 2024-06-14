@@ -1,16 +1,33 @@
+import imgDelyzze from '../img/work/delyzze.jpg';
 import imgFreeLancer from '../img/work/frelancer.svg';
-import imgUPA from '../img/work/upa24h.svg';
+import imgUPA from '../img/work/idab.png';
 import { skills } from './skills';
 const currentDate = new Date().getFullYear();
 
 export const work = [
   {
     id: 1,
+    institution: 'Delyzze',
+    office: 'Desenvolvedor Front-end',
+    img: imgDelyzze,
+    about:
+      'Desenvolvimento de interfaces de usuário responsivas e de alta qualidade utilizando Next.js, TypeScript e Material UI.Implementação eficaz de versionamento com Git, gerenciando branches e pull requests.Liderança no desenvolvimento da página inicial (landing page) da empresa, utilizando Next.js, TypeScript, Material UI e Styled Components, com foco na responsividade e experiência do usuário.',
+    startdate: 2024,
+    enddate: currentDate,
+
+    techs: [
+      { id: 1, name: 'React', title: skills[4].title, img: skills[4].img },
+      { id: 2, name: 'TypeScript', title: skills[3].title, img: skills[3].img },
+      { id: 3, name: 'NextJs', title: skills[5].title, img: skills[5].img },
+    ],
+  },
+  {
+    id: 2,
     institution: 'Freelancer',
     office: 'Desenvolvedor Front-end',
     img: imgFreeLancer,
     about:
-      'Sou especializado em HTML, CSS, JavaScript e frameworks como React. Tenho habilidades comprovadas como freelancer, entregando soluções de alta qualidade, além disso, possuo experiência em desenvolvimento de aplicações web responsivas e interativas, interfaces amigáveis e funcionais que proporcionam uma excelente experiência do usuário.',
+      'Encarregado de desenvolver, implementar e sustentar várias aplicações usando ReactJS e NodeJS. Responsável por aprimorar o desempenho e a usabilidade de sistemas da web, otimizando o carregamento de páginas.Gerencia o controle de versão Git em um ambiente de desenvolvimento distribuído, garantindo o registro adequado de lançamentos e versões do projeto ',
     startdate: 2020,
     enddate: currentDate,
 
@@ -22,8 +39,8 @@ export const work = [
   },
 
   {
-    id: 2,
-    institution: 'UPA',
+    id: 3,
+    institution: 'IDAB',
     office: 'Analista de TI',
     img: imgUPA,
     about:

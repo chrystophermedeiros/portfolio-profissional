@@ -6,6 +6,9 @@ export const Container = styled.section`
   border: 0px solid aqua;
   border-radius: 20px;
   overflow: hidden;
+  img: {
+    loading: 'lazy';
+  }
   .box {
     @media (max-width: 600px) {
       height: 250px;

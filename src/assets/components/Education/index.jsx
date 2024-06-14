@@ -31,11 +31,11 @@ export function Education() {
                 <TimelineSeparator>
                   <TimelineConnector />
                   <TimelineDot>
-                    <img width={60} src={obj.img} alt="" />
+                    <img width={60} src={obj.img} alt="" loading="lazy" />
                   </TimelineDot>
                   <TimelineConnector />
                 </TimelineSeparator>
-                <TimelineContent sx={{ py: '20px', px: 4 }}>
+                <TimelineContent sx={{ py: '30px', px: 4 }}>
                   <Typography color={'var(--color-primary-variant)'}>
                     {obj.course}
                   </Typography>

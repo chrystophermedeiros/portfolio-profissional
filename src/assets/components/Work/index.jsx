@@ -11,7 +11,7 @@ export function Work() {
           <Card key={obj.id}>
             <header>
               <article className="conatinerLeft">
-                <img src={obj.img} alt="" />
+                <img className="img-work" src={obj.img} alt="" />
                 <div className="left">
                   <p className="institution">{obj.institution}</p>
                   <p className="oficce">{obj.office}</p>

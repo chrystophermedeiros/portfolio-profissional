@@ -3,10 +3,10 @@ import imgGit from '../img/skills/git.svg';
 import imgHTML from '../img/skills/html.svg';
 import imgJS from '../img/skills/javascript.svg';
 import imgMaterialUi from '../img/skills/material-ui.svg';
+import imgNextjs from '../img/skills/next-js.svg';
 import imgReact from '../img/skills/react.svg';
 import imgSytleC from '../img/skills/styled-components.svg';
 import imgTypeScript from '../img/skills/typescript.svg';
-
 export const skills = [
   {
     id: 1,
@@ -38,12 +38,12 @@ export const skills = [
     img: imgReact,
     color: '#61DAFB',
   },
-  // {
-  //   id: 6,
-  //   title: 'Next JS',
-  //   img: '/skills/next-js.svg',
-  //   color: '#fff'
-  // },
+  {
+    id: 6,
+    title: 'Next JS',
+    img: imgNextjs,
+    color: '#fff',
+  },
   {
     id: 7,
     title: 'Styled Components',

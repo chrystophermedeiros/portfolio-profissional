@@ -21,6 +21,12 @@ export const Card = styled.div`
   display: flex;
   flex-direction: column;
 
+  .img-work {
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+  }
+
   background: var(--color-bg-variant);
   padding: 10px;
 
@@ -84,11 +90,6 @@ export const Card = styled.div`
     .conatinerLeft {
       display: flex;
       gap: 10px;
-
-      img {
-        width: 50px;
-        border-radius: 50%;
-      }
 
       .left {
         display: flex;

@@ -136,8 +136,8 @@ export const Card = styled.div`
   &:hover {
     background: transparent;
     border: 3px solid aqua;
-    transition: all 500ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
-    zoom: 1.1;
+    transition: ease-in;
+    zoom: 1;
 
     .cardImg {
       transition: opacity 1s ease;

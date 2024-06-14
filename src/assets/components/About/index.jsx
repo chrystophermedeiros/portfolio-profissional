@@ -12,16 +12,17 @@ export function About() {
         <AboutImg src={I} alt="" />
         <Card>
           <p>
-            Programador Front-End apaixonado por tecnologia, possuo habilidades
-            em React, JavaScript, Node.js, Styled-components, Material UI, HTML
-            e CSS. Tenho experiência em projetos de desenvolvimento web,
-            oferecendo soluções personalizadas e criativas. Especializado em
-            criar interfaces de usuário interativas e responsivas. Habilidades
-            sólidas em bibliotecas e frameworks populares, como React, para
-            construir aplicações web modernas e escaláveis. Focado na qualidade
-            do código e atenção aos detalhes. Pronto para enfrentar desafios
-            técnicos complexos. Aberto a novas oportunidades para criar
-            experiências digitais de alto nível.
+            Sou um profissional apaixonado por tecnologia, graduado em Análise e
+            Desenvolvimento de Sistemas pela UNIFACS e pós-graduado em
+            Engenharia de Software pela Estácio. Tenho buscado oportunidades
+            como desenvolvedor web para aplicar e expandir conhecimento e
+            experiência na área. Possuo certificações em CSS, HTML, JavaScript,
+            TypeScript e Node.js pelo DevClub, o que demonstra comprometimento
+            em manter atualizado com as mais recentes tecnologias e práticas da
+            indústria. Estou determinado a aprimorar minhas habilidades em
+            tecnologia e contribuir de forma significativa em projetos
+            desafiadores, trabalhando em colaboração com profissionais
+            experientes.
           </p>
         </Card>
       </ContainerItems>

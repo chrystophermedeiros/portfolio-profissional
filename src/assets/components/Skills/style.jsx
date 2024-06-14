@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Container = styled.section`
   height: 100%;
@@ -15,12 +15,8 @@ export const ContainerItems = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   @media (min-width: 600px) {
-    
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-   
   }
-
- 
 `;
 
 export const Card = styled.div`
@@ -36,13 +32,10 @@ export const Card = styled.div`
   justify-content: center;
   gap: 10px;
 
-
-
   img {
     height: 80%;
     padding: 20px;
   }
-  
 
   &:hover {
     background-color: transparent;
