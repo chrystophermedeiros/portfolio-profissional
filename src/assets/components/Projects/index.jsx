@@ -79,7 +79,12 @@ export function Projects() {
                       </Button>
                     </a>
                   </ButtonContainer>
-                  <details onClick={() => handleOpen(obj.id)}></details>
+                  <button
+                    className="button-about"
+                    onClick={() => handleOpen(obj.id)}
+                  >
+                    Sobre
+                  </button>
                   <ModalContainer
                     open={openModalId === obj.id}
                     onClose={handleClose}

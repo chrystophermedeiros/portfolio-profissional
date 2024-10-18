@@ -19,7 +19,7 @@ export const FooterContainer = styled.footer`
 
   h4 {
     font-size: 1.1rem;
-    color: aqua;
+    color: var(--color-primary);
   }
 
   .links {
@@ -27,14 +27,14 @@ export const FooterContainer = styled.footer`
     display: flex;
     gap: 9px;
     font-size: 1.4rem;
-    color: aqua;
+    color: var(--color-white);
 
     a {
       text-decoration: none;
       color: white;
 
       &:hover {
-        color: aqua;
+        color: var(--color-primary);
       }
     }
   }

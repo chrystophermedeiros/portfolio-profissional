@@ -4,11 +4,11 @@ import { MdLightMode, MdModeNight } from 'react-icons/md';
 import {
   Header,
   About,
-  Main,
+  Hero,
   Projects,
   Skills,
-  Footer,
   Contact,
+  Footer,
   ScrollTop,
   Experience,
 } from '../../components/';
@@ -21,6 +21,7 @@ export function Home() {
 
   useEffect(() => {
     localStorage.setItem('isDark', isDark);
+    document.body.setAttribute('data-theme', isDark ? 'dark' : 'light');
   }, [isDark]);
 
   const handleDarkModeToggle = () => {
@@ -36,7 +37,7 @@ export function Home() {
     <Container isDark={isDark}>
       <Header handleDarkModeToggle={handleDarkModeToggle} icon={icon} />
       <ContainerItems id="home">
-        <Main />
+        <Hero />
         <About />
         <Skills />
         <Experience />

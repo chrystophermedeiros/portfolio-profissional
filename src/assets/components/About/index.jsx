@@ -1,28 +1,32 @@
 import React from 'react';
 
-import I from '../../img/i/sobre.jpeg';
 import { Titles } from '../Titles';
-import { Container, ContainerItems, AboutImg, Card } from './style';
+import { Container, ContainerItems, Card } from './style';
 
 export function About() {
   return (
     <Container id={'sobre'}>
       <Titles>Sobre mim</Titles>
       <ContainerItems>
-        <AboutImg src={I} alt="" />
         <Card>
           <p>
-            Sou um profissional apaixonado por tecnologia, graduado em Análise e
-            Desenvolvimento de Sistemas pela UNIFACS e pós-graduado em
-            Engenharia de Software pela Estácio. Tenho buscado oportunidades
-            como desenvolvedor web para aplicar e expandir conhecimento e
-            experiência na área. Possuo certificações em CSS, HTML, JavaScript,
-            TypeScript e Node.js pelo DevClub, o que demonstra comprometimento
-            em manter atualizado com as mais recentes tecnologias e práticas da
-            indústria. Estou determinado a aprimorar minhas habilidades em
-            tecnologia e contribuir de forma significativa em projetos
-            desafiadores, trabalhando em colaboração com profissionais
-            experientes.
+            Desde cedo, a tecnologia me fascina, e essa paixão me levou a
+            construir uma carreira como desenvolvedor front-end. Com uma
+            formação em Análise e Desenvolvimento de Sistemas pela UNIFACS e
+            pós-graduação em Engenharia de Software pela Estácio, estou sempre
+            em busca de aprimorar minhas habilidades e acompanhar as tendências
+            mais recentes do mercado. Atualmente, meu foco está em criar e
+            gerenciar o front-end de sites e aplicativos web, com o objetivo de
+            melhorar a experiência do usuário e contribuir para o sucesso dos
+            projetos em que me envolvo. Se tiver interesse em conhecer meu
+            trabalho, você pode conferir alguns dos meus projetos na seção
+            dedicada. Além do desenvolvimento, tenho um grande prazer em
+            compartilhar o que aprendi ao longo dos anos, seja ajudando a
+            comunidade Dev com dicas práticas ou oferecendo insights sobre
+            Desenvolvimento Web no LinkedIn. Estou sempre disponível para trocar
+            ideias e conectar com outras pessoas da área. Se houver uma
+            oportunidade de trabalho que combine com minhas habilidades, ficarei
+            feliz em conversar. Vamos nos conectar!
           </p>
         </Card>
       </ContainerItems>

@@ -68,7 +68,7 @@ export const ContainerItems = styled.div`
     a {
       text-decoration: none;
       list-style: none;
-      color: aqua;
+      color: var(--color-primary);
 
       &:hover {
         opacity: 0.6;

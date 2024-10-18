@@ -74,14 +74,31 @@ export const MobileIcon = styled.div`
 `;
 
 export const NavMenu = styled.div`
+  .active {
+    color: var(--color-primary);
+  }
+  .constrast {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    svg {
+      color: var(--color-black);
+    }
+  }
   @media (max-width: 994px) {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
     height: 100vh;
-    width: 100vw;
+    width: 50vw;
     background: #1a1a1a;
     z-index: 10;
     opacity: 0.95;
     position: fixed;
-    transform: ${({ open }) => (open ? 'translateX(0)' : 'translateX(100%)')};
+    transform: ${({ open }) =>
+      open ? 'translateX(100%)' : 'translateX(200%)'};
     transition: transform 0.5s ease-in-out;
   }
 
@@ -95,7 +112,7 @@ export const NavMenu = styled.div`
       gap: 2px;
       font-size: 1.1rem;
       font-weight: 600;
-      color: white;
+      color: var(--color-white);
       height: 1rem;
       cursor: pointer;
 

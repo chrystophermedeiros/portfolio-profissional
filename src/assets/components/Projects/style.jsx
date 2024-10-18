@@ -66,6 +66,17 @@ export const ContainerItems = styled.div`
   align-items: center;
   justify-content: center;
   position: relative;
+  .button-about {
+    cursor: pointer;
+    width: 50%;
+    background-color: var(--color-accent);
+    color: var(--color-white);
+    border-radius: 30px;
+    transition: var(--transition);
+    &:hover {
+      opacity: 0.6;
+    }
+  }
 `;
 
 export const ModalContainer = styled(Modal)`
@@ -136,7 +147,7 @@ export const Card = styled.div`
   &:hover {
     background: transparent;
     border: 3px solid aqua;
-    transition: ease-in;
+    transition: 0.2s ease-in-out;
     zoom: 1;
 
     .cardImg {

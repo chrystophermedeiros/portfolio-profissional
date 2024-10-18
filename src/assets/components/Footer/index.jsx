@@ -7,7 +7,7 @@ import { FooterContainer } from './style';
 const currentDate = new Date().getFullYear();
 export function Footer() {
   return (
-    <FooterContainer>
+    <FooterContainer id="footer">
       <h4> &copy; {currentDate} Chrystopher Medeiros</h4>
       <div className="links">
         <a

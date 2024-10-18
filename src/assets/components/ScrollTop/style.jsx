@@ -15,7 +15,7 @@ export const Scroll = styled.div`
     border: none;
     border-radius: 50px;
     cursor: pointer;
-    color: #000000;
+    color: var(--color-white);
     z-index: 9;
 
     &:hover {
