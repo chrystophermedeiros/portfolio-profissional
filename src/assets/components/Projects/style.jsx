@@ -14,14 +14,48 @@ export const Container = styled.section`
   .rec-dot_active {
     background-color: var(--color-primary);
     box-shadow: none;
+
+  }
+
+  .hhtRtp{
+    @media (max-width: 994px) {
+    position: relative;
+    display: block;
+
+    }
+  }
+  .rec-dot{
+    @media (max-width: 994px) {
+    position: relative;
+
+    left: 2%;
+
+    }
   }
   .rec.rec-arrow {
     background-color: var(--color-primary);
     color: #ffffff;
     border-radius: 50px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
+
+  .rec-arrow-left {
     @media (max-width: 994px) {
-      display: none;
+    position: absolute;
+    top: 92%;
+    left: 70%;
+    z-index: 10;
+    transform: scale(0.8);
+    }
+  }
+
+  .rec-arrow-right {
+    @media (max-width: 994px) {
+      position: absolute;
+      right: 2%;
+      top: 92%;
+      transform: scale(0.8);
+      
     }
   }
 

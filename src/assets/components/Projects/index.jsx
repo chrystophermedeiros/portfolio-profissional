@@ -97,6 +97,21 @@ export function Projects() {
                         </button>
                       </article>
                       <p>{obj.about}</p>
+                      {obj.video ? (
+                        <>
+                          <p>Video:</p>
+                          <iframe
+                            src={obj.video}
+                            width="100%"
+                            height="200px"
+                            allow="autoplay; encrypted-media"             
+                            allowFullScreen
+                          ></iframe>
+                        </>
+                      ) : (
+                        <p>Video: Em breve</p>
+                      )}
+
                       <h3>Tecnologias:</h3>
                       <div className="tec">
                         {obj.tag.map((tag) => (

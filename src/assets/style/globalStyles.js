@@ -25,7 +25,7 @@ const GlobalStyle = createGlobalStyle`
     --color-primary-variant: rgba(77, 181, 255, 0.4); 
     --color-white: #f0f0f0; 
     --color-black: #000000; 
-    --color-accent: #f6b93b;
+    --color-accent: #204060;
     --transition: all 400ms ease; 
 }
 
@@ -37,7 +37,7 @@ const GlobalStyle = createGlobalStyle`
     --color-primary-variant: rgba(77, 181, 255, 0.4); 
     --color-white: #f0f0f0; 
     --color-black: #ffffff; 
-    --color-accent: #ffb84d
+    --color-accent: #204060
 }
 
 body {

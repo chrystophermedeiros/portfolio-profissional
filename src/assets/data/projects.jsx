@@ -17,6 +17,7 @@ export const projects = [
     name: 'Code Burger',
     about:
       'Este projeto é um site de e-commerce que utiliza HTML, CSS, JavaScript, React, Node.js e consumo de APIs para oferecer aos usuários a capacidade de explorar produtos, adicionar itens ao carrinho, realizar login e efetuar compras online.',
+    video: 'https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7099851420140494848?compact=1',
     path: 'https://infertace-code-burger.vercel.app/',
     github: 'https://github.com/chrystophermedeiros/infertaceCodeBurger',
     tag: [
