@@ -17,7 +17,7 @@ export const Container = styled.section`
 
   }
 
-  .hhtRtp{
+  .rec-carousel-wrapper{
     @media (max-width: 994px) {
     position: relative;
     display: block;
@@ -27,7 +27,6 @@ export const Container = styled.section`
   .rec-dot{
     @media (max-width: 994px) {
     position: relative;
-
     left: 2%;
 
     }
