@@ -69,7 +69,7 @@ export const MobileIcon = styled.div`
     top: 1rem;
     right: 1rem;
     cursor: pointer;
-    z-index: 20;
+    z-index: 30;
   }
 `;
 
