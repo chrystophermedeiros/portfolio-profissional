@@ -43,7 +43,6 @@ export const Container = styled.section`
     position: absolute;
     top: 92%;
     left: 70%;
-    z-index: 10;
     transform: scale(0.8);
     }
   }
