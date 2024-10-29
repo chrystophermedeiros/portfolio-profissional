@@ -15,12 +15,7 @@ export const Scroll = styled.div`
     border-radius: 50px;
     cursor: pointer;
     color: var(--color-white);
-    z-index: 9;
-    @media (max-width: 994px) {
-        left: 1rem;
-        right: auto;
-      }
-    
+    z-index: 9;    
 
     &:hover {
       opacity: 0.6;
