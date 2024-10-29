@@ -4,7 +4,6 @@ export const Scroll = styled.div`
   button {
     position: fixed;
     display: flex;
-
     align-items: center;
     justify-content: center;
     bottom: 1rem;
@@ -17,9 +16,16 @@ export const Scroll = styled.div`
     cursor: pointer;
     color: var(--color-white);
     z-index: 9;
+    @media (max-width: 994px) {
+        left: 1rem;
+        right: auto;
+      }
+    
 
     &:hover {
       opacity: 0.6;
     }
   }
+
+  
 `;
