@@ -8,9 +8,29 @@ import imgDevMoney from '../img/projects/projeto-devmoney.jpg';
 import imgMovies from '../img/projects/projeto-movies.png';
 import imgPortfolioWebsite from '../img/projects/projeto-portfolio-website.jpg';
 import imgTarefas from '../img/projects/projeto-tarefas.png';
+import imgPokemonTcg from '../img/projects/projeto-pokemontcg.png';
+import imgChurrascometro from '../img/projects/projeto-churrascometro.png';
+
 import skills from './skills';
 
 export const projects = [
+  {
+    id: uuidv1(),
+    img: imgPokemonTcg,
+    name: 'Pokemon TCG',
+    about:
+      'Explore uma vasta coleção de cartas do Pokémon TCG. Filtre por tipos, raridades e capture ou libere seus Pokémon favoritos. Descubra os cards de Pokémon mais raros e valiosos em nosso site!',
+    video: '',
+    path: 'https://pokemontcg-mu.vercel.app/',
+    github: 'https://github.com/chrystophermedeiros/pokemontcg',
+    tag: [
+      { id: 1, name: 'HTML', title: skills[0].title, img: skills[0].img },
+      { id: 2, name: 'CSS', title: skills[1].title, img: skills[1].img },
+      { id: 3, name: 'JavaScript', title: skills[2].title, img: skills[2].img },
+      { id: 4, name: 'React', title: skills[4].title, img: skills[4].img },
+    ],
+  },
+
   {
     id: uuidv1(),
     img: imgCodeBurguer,
@@ -86,6 +106,20 @@ export const projects = [
       { id: 1, name: 'TypeScript', title: skills[3].title, img: skills[3].img },
       { id: 2, name: 'JavaScript', title: skills[2].title, img: skills[2].img },
       { id: 3, name: 'React', title: skills[4].title, img: skills[4].img },
+    ],
+  },
+  {
+    id: uuidv1(),
+    img: imgChurrascometro,
+    name: 'Churrascometro',
+    about:
+      'Esta aplicação auxilia no planejamento de churrascos, calculando de forma automática a quantidade de comida e bebida necessárias com base no número de adultos, crianças e a duração do evento. A ferramenta otimiza a organização, garantindo eficiência no consumo e evitando desperdícios',
+    path: 'https://churrascometro-blush.vercel.app/',
+    github: 'https://github.com/chrystophermedeiros/churrascometro',
+    tag: [
+      { id: 1, name: 'HTML', title: skills[0].title, img: skills[0].img },
+      { id: 2, name: 'CSS', title: skills[1].title, img: skills[1].img },
+      { id: 3, name: 'JavaScript', title: skills[2].title, img: skills[2].img },
     ],
   },
   {
